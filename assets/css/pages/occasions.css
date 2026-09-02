@@ -1,0 +1,4345 @@
+/* ==================================================
+   OCCASIONS PAGE STARTED
+================================================== */
+
+/* ==================================================
+   OCCASIONS HERO SECTION STARTED
+================================================== */
+
+.occasions-hero {
+  position: relative;
+
+  min-height: calc(100vh - 100px);
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 87% 28%,
+      rgba(255, 92, 120, 0.13),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 10% 80%,
+      rgba(255, 218, 224, 0.38),
+      transparent 28%
+    ),
+    linear-gradient(115deg, #fffaf8 0%, #ffffff 50%, #fff0f3 100%);
+}
+
+.occasions-hero::before {
+  content: "";
+
+  position: absolute;
+
+  top: 70px;
+  left: -110px;
+
+  width: 250px;
+  height: 250px;
+
+  border: 1px solid rgba(255, 92, 120, 0.08);
+  border-radius: 50%;
+}
+
+.occasions-hero::after {
+  content: "";
+
+  position: absolute;
+
+  right: -90px;
+  bottom: -110px;
+
+  width: 320px;
+  height: 320px;
+
+  border: 1px solid rgba(90, 36, 18, 0.06);
+  border-radius: 50%;
+}
+
+/* ==================================================
+   OCCASIONS HERO CONTAINER STARTED
+================================================== */
+
+.occasions-hero-container {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.95fr)
+    minmax(0, 1.05fr);
+
+  min-height: calc(100vh - 100px);
+
+  align-items: center;
+
+  gap: clamp(48px, 6vw, 88px);
+}
+
+/* ==================================================
+   OCCASIONS HERO CONTENT STARTED
+================================================== */
+
+.occasions-hero-content {
+  padding: 50px 0;
+}
+
+/* ==================================================
+   OCCASIONS BREADCRUMB STARTED
+================================================== */
+
+.occasions-breadcrumb {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 21px;
+
+  color: #a1847b;
+
+  font-size: 9px;
+}
+
+.occasions-breadcrumb a {
+  color: #ff5c78;
+
+  transition: color 0.25s ease;
+}
+
+.occasions-breadcrumb a:hover {
+  color: #5a2412;
+}
+
+/* ==================================================
+   OCCASIONS BREADCRUMB ENDED
+================================================== */
+
+.occasions-hero-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 10px;
+
+  color: #ff5c78;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.65px;
+
+  text-transform: uppercase;
+}
+
+/* ==================================================
+   OCCASIONS HERO TITLE REFINED
+================================================== */
+
+.occasions-hero-title {
+  max-width: 680px;
+
+  margin: 0;
+
+  color: #42190d;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.9rem, 4.25vw, 4.75rem);
+
+  font-weight: 700;
+
+  line-height: 1.1;
+
+  letter-spacing: -1.8px;
+}
+
+.occasions-hero-title span {
+  display: block;
+
+  color: #ff5c78;
+}
+
+.occasions-hero-description {
+  max-width: 590px;
+
+  margin: 20px 0 0;
+
+  color: #78584f;
+
+  font-size: 9px;
+
+  line-height: 1.8;
+}
+
+/* ==================================================
+   OCCASIONS HERO ACTIONS STARTED
+================================================== */
+
+.occasions-hero-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 26px;
+}
+
+.occasions-hero-primary,
+.occasions-hero-secondary {
+  display: inline-flex;
+
+  min-height: 44px;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 0 18px;
+
+  border-radius: 8px;
+
+  font-size: 8px;
+  font-weight: 600;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.occasions-hero-primary {
+  border: 1px solid #ff5c78;
+
+  background: linear-gradient(135deg, #ff6980 0%, #ef4965 100%);
+
+  color: #ffffff;
+
+  box-shadow: 0 9px 20px rgba(255, 92, 120, 0.2);
+}
+
+.occasions-hero-primary:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 13px 26px rgba(255, 92, 120, 0.24);
+}
+
+.occasions-hero-secondary {
+  border: 1px solid #e6d1ca;
+
+  background: rgba(255, 255, 255, 0.86);
+
+  color: #5a382e;
+}
+
+.occasions-hero-secondary:hover {
+  transform: translateY(-2px);
+
+  border-color: #ff5c78;
+
+  color: #ff5c78;
+}
+
+/* ==================================================
+   OCCASIONS HERO FEATURES STARTED
+================================================== */
+
+.occasions-hero-features {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 10px;
+
+  margin-top: 32px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(224, 194, 186, 0.72);
+}
+
+.occasions-hero-features article {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+}
+
+.occasions-hero-features article > span {
+  display: grid;
+
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  color: #ff5c78;
+
+  box-shadow: 0 5px 14px rgba(66, 25, 13, 0.05);
+}
+
+.occasions-hero-features strong,
+.occasions-hero-features small {
+  display: block;
+}
+
+.occasions-hero-features strong {
+  margin-bottom: 2px;
+
+  color: #513127;
+
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.occasions-hero-features small {
+  color: #9a7c73;
+
+  font-size: 6px;
+
+  line-height: 1.4;
+}
+
+/* ==================================================
+   OCCASIONS HERO CONTENT ENDED
+================================================== */
+
+/* ==================================================
+   OCCASIONS HERO VISUAL STARTED
+================================================== */
+
+.occasions-hero-visual {
+  position: relative;
+
+  display: flex;
+
+  min-height: 590px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.occasions-hero-glow {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.94) 0%,
+    rgba(255, 219, 226, 0.42) 56%,
+    transparent 72%
+  );
+}
+
+/* ==================================================
+   OCCASIONS HERO IMAGE STARTED
+================================================== */
+
+.occasions-hero-image-wrap {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(100%, 520px);
+  height: 510px;
+
+  overflow: hidden;
+
+  border: 8px solid rgba(255, 255, 255, 0.9);
+  border-radius: 210px 210px 28px 28px;
+
+  background: #fff5f2;
+
+  box-shadow:
+    0 28px 60px rgba(66, 25, 13, 0.13),
+    0 5px 14px rgba(66, 25, 13, 0.04);
+}
+
+.occasions-hero-image-wrap img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.55s ease;
+}
+
+.occasions-hero-image-wrap:hover img {
+  transform: scale(1.035);
+}
+
+.occasions-hero-image-label {
+  position: absolute;
+
+  top: 22px;
+  left: 22px;
+
+  padding: 6px 9px;
+
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, 0.93);
+
+  color: #ff5c78;
+
+  font-size: 6px;
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+}
+
+/* ==================================================
+   OCCASIONS HERO NOTE STARTED
+================================================== */
+
+.occasions-hero-note {
+  position: absolute;
+
+  top: 118px;
+  left: 18px;
+
+  z-index: 4;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 12px 14px;
+
+  border: 1px solid #eadbd6;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  box-shadow: 0 13px 30px rgba(66, 25, 13, 0.09);
+}
+
+.occasions-hero-note > span {
+  color: #ff7990;
+
+  font-family: var(--font-heading);
+
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.occasions-hero-note strong,
+.occasions-hero-note small {
+  display: block;
+}
+
+.occasions-hero-note strong {
+  color: #4d2e24;
+
+  font-size: 8px;
+}
+
+.occasions-hero-note small {
+  margin-top: 2px;
+
+  color: #9c8077;
+
+  font-size: 6px;
+}
+
+/* ==================================================
+   OCCASIONS HERO FLOATING CARD STARTED
+================================================== */
+
+.occasions-hero-floating-card {
+  position: absolute;
+
+  right: 18px;
+  bottom: 68px;
+
+  z-index: 4;
+
+  display: flex;
+
+  min-width: 250px;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 14px 16px;
+
+  border: 1px solid #ead8d2;
+  border-radius: 13px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  box-shadow: 0 16px 36px rgba(66, 25, 13, 0.11);
+}
+
+.occasions-hero-floating-card > span {
+  display: grid;
+
+  width: 36px;
+  height: 36px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #fff0f3;
+
+  color: #ff5c78;
+}
+
+.occasions-hero-floating-card strong,
+.occasions-hero-floating-card small {
+  display: block;
+}
+
+.occasions-hero-floating-card strong {
+  color: #49291f;
+
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.occasions-hero-floating-card small {
+  margin-top: 3px;
+
+  color: #9a7d74;
+
+  font-size: 6px;
+}
+
+/* ==================================================
+   OCCASIONS HERO VISUAL ENDED
+================================================== */
+
+/* ==================================================
+   OCCASIONS HERO TITLE LINE CONTROL STARTED
+================================================== */
+
+.occasions-hero-title .occasions-title-line {
+  display: block;
+}
+
+.occasions-hero-title .occasions-title-line:first-child {
+  color: #42190d;
+  white-space: nowrap;
+  font-size: 0.82em;
+}
+
+.occasions-hero-title .occasions-title-accent {
+  color: #ff5c78;
+}
+
+/* ==================================================
+   OCCASIONS HERO TITLE LINE CONTROL ENDED
+================================================== */
+
+/* ==================================================
+   OCCASIONS HERO RESPONSIVE STARTED
+================================================== */
+
+@media (max-width: 1100px) {
+  .occasions-hero-container {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px;
+  }
+
+  .occasions-hero-image-wrap {
+    height: 470px;
+  }
+
+  .occasions-hero-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .occasions-hero {
+    min-height: auto;
+  }
+
+  .occasions-hero-container {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+
+    gap: 10px;
+  }
+
+  .occasions-hero-content {
+    padding: 45px 0 20px;
+
+    text-align: center;
+  }
+
+  .occasions-breadcrumb,
+  .occasions-hero-actions {
+    justify-content: center;
+  }
+
+  .occasions-hero-description {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .occasions-hero-actions {
+    flex-wrap: wrap;
+  }
+
+  .occasions-hero-features {
+    max-width: 450px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: left;
+  }
+
+  .occasions-hero-visual {
+    min-height: 500px;
+  }
+
+  .occasions-hero-image-wrap {
+    width: min(90%, 430px);
+    height: 430px;
+  }
+
+  .occasions-hero-note {
+    left: 3%;
+  }
+
+  .occasions-hero-floating-card {
+    right: 3%;
+  }
+}
+
+@media (max-width: 480px) {
+  .occasions-hero-title {
+    font-size: clamp(2.7rem, 12vw, 3.6rem);
+  }
+
+  .occasions-hero-actions {
+    display: grid;
+
+    grid-template-columns: 1fr;
+  }
+
+  .occasions-hero-primary,
+  .occasions-hero-secondary {
+    width: 100%;
+  }
+
+  .occasions-hero-visual {
+    min-height: 420px;
+  }
+
+  .occasions-hero-image-wrap {
+    height: 380px;
+  }
+
+  .occasions-hero-note {
+    top: 78px;
+  }
+
+  .occasions-hero-floating-card {
+    right: 0;
+    bottom: 16px;
+
+    min-width: 218px;
+  }
+}
+
+/* ==================================================
+   OCCASIONS HERO SECTION ENDED
+================================================== */
+
+/* ==================================================
+   BIRTHDAY CAKES SECTION STARTED
+================================================== */
+
+.birthday-cakes-section {
+  position: relative;
+
+  min-height: calc(100vh - 100px);
+
+  padding: 28px 0 20px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 92% 20%,
+      rgba(255, 92, 120, 0.08),
+      transparent 25%
+    ),
+    linear-gradient(120deg, #fffaf8 0%, #ffffff 52%, #fff4f6 100%);
+}
+
+.birthday-cakes-container {
+  position: relative;
+
+  z-index: 2;
+}
+
+/* ==================================================
+   BIRTHDAY CAKES HEADING STARTED
+================================================== */
+
+.birthday-cakes-heading {
+  max-width: 700px;
+
+  margin-bottom: 16px;
+}
+
+.birthday-cakes-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  color: #ff5c78;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.55px;
+
+  text-transform: uppercase;
+}
+
+.birthday-cakes-title {
+  margin: 0;
+
+  color: #42190d;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.7rem, 3.8vw, 4.05rem);
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: -1.4px;
+}
+
+.birthday-cakes-title span {
+  display: block;
+
+  color: #ff5c78;
+}
+
+.birthday-cakes-description {
+  max-width: 620px;
+
+  margin: 12px 0 0;
+
+  color: #795c53;
+
+  font-size: 8px;
+
+  line-height: 1.7;
+}
+
+/* ==================================================
+   BIRTHDAY CAKES HEADING ENDED
+================================================== */
+
+/* ==================================================
+   BIRTHDAY CAKES LAYOUT STARTED
+================================================== */
+
+.birthday-cakes-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(0, 1.35fr);
+
+  gap: 16px;
+
+  align-items: stretch;
+}
+
+/* ==================================================
+   FEATURED BIRTHDAY CAKE STARTED
+================================================== */
+
+.birthday-featured-card {
+  min-width: 0;
+}
+
+.birthday-featured-image {
+  position: relative;
+
+  height: 356px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #fff2ef;
+
+  box-shadow: 0 14px 34px rgba(66, 25, 13, 0.08);
+}
+
+.birthday-featured-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.birthday-featured-card:hover .birthday-featured-image img {
+  transform: scale(1.035);
+}
+
+.birthday-featured-badge {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  z-index: 2;
+
+  padding: 6px 9px;
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  color: #ff5c78;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+}
+
+.birthday-featured-overlay {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  padding: 52px 18px 18px;
+
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(52, 17, 10, 0.82) 100%
+  );
+
+  color: #ffffff;
+}
+
+.birthday-featured-overlay > span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #ffd0d8;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+}
+
+.birthday-featured-overlay h3 {
+  margin: 0 0 6px;
+
+  font-family: var(--font-heading);
+
+  font-size: 24px;
+
+  line-height: 1;
+}
+
+.birthday-featured-overlay p {
+  max-width: 420px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 6.5px;
+
+  line-height: 1.55;
+}
+
+.birthday-featured-overlay a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 12px;
+
+  color: #ffffff;
+
+  font-size: 6.5px;
+  font-weight: 600;
+}
+
+/* ==================================================
+   FEATURED BIRTHDAY CAKE ENDED
+================================================== */
+
+/* ==================================================
+   BIRTHDAY CAKE GRID STARTED
+================================================== */
+
+.birthday-cakes-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+.birthday-cake-card {
+  min-width: 0;
+
+  overflow: hidden;
+
+  border: 1px solid #eadbd6;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow: 0 7px 18px rgba(66, 25, 13, 0.035);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.birthday-cake-card:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(255, 92, 120, 0.45);
+
+  box-shadow: 0 12px 26px rgba(66, 25, 13, 0.06);
+}
+
+.birthday-cake-image {
+  position: relative;
+
+  height: 124px;
+
+  overflow: hidden;
+
+  background: #fff4f2;
+}
+
+.birthday-cake-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+.birthday-cake-card:hover .birthday-cake-image img {
+  transform: scale(1.035);
+}
+
+.birthday-cake-image > span {
+  position: absolute;
+
+  top: 10px;
+  left: 10px;
+
+  display: grid;
+
+  min-width: 30px;
+  height: 24px;
+
+  place-items: center;
+
+  padding: 0 7px;
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  color: #ff5c78;
+
+  font-family: var(--font-heading);
+
+  font-size: 7px;
+}
+
+.birthday-cake-content {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  padding: 9px 13px;
+}
+
+.birthday-cake-content small {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #c09a91;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.55px;
+}
+
+.birthday-cake-content h3 {
+  margin: 0;
+
+  color: #4b291f;
+
+  font-family: var(--font-heading);
+
+  font-size: 17px;
+
+  line-height: 1;
+}
+
+.birthday-cake-content > a {
+  display: grid;
+
+  width: 29px;
+  height: 29px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border: 1px solid #ead8d2;
+  border-radius: 50%;
+
+  color: #d39b91;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.birthday-cake-content > a:hover {
+  transform: translateX(2px);
+
+  border-color: #ff5c78;
+
+  background: #ff5c78;
+
+  color: #ffffff;
+}
+
+/* ==================================================
+   BIRTHDAY CAKE GRID ENDED
+================================================== */
+
+/* ==================================================
+   BIRTHDAY CAKES BOTTOM BAR STARTED
+================================================== */
+
+.birthday-cakes-bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  margin-top: 8px;
+
+  padding: 11px 14px;
+
+  border: 1px solid #ead9d3;
+  border-radius: 11px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  box-shadow: 0 7px 18px rgba(66, 25, 13, 0.035);
+}
+
+.birthday-cakes-bottom > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.birthday-cakes-bottom > div > span {
+  display: grid;
+
+  width: 31px;
+  height: 31px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #fff0f3;
+
+  color: #ff5c78;
+}
+
+.birthday-cakes-bottom strong,
+.birthday-cakes-bottom small {
+  display: block;
+}
+
+.birthday-cakes-bottom strong {
+  color: #4d2e24;
+
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.birthday-cakes-bottom small {
+  margin-top: 2px;
+
+  color: #987e76;
+
+  font-size: 5.5px;
+}
+
+.birthday-cakes-bottom > a {
+  display: inline-flex;
+
+  min-height: 32px;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 0 12px;
+
+  border-radius: 7px;
+
+  background: #fff0f3;
+
+  color: #ff5c78;
+
+  font-size: 6.5px;
+  font-weight: 600;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.birthday-cakes-bottom > a:hover {
+  transform: translateY(-1px);
+
+  background: #ff5c78;
+
+  color: #ffffff;
+}
+
+/* ==================================================
+   BIRTHDAY CAKES RESPONSIVE STARTED
+================================================== */
+
+@media (max-width: 1000px) {
+  .birthday-cakes-section {
+    min-height: auto;
+  }
+
+  .birthday-cakes-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .birthday-featured-image {
+    height: 460px;
+  }
+}
+
+@media (max-width: 650px) {
+  .birthday-cakes-heading {
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+  }
+
+  .birthday-cakes-description {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .birthday-cakes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .birthday-cake-image {
+    height: 220px;
+  }
+
+  .birthday-cakes-bottom {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .birthday-cakes-bottom > a {
+    width: 100%;
+  }
+}
+
+/* ==================================================
+   BIRTHDAY CAKES SECTION ENDED
+================================================== */
+
+/* ==================================================
+   ANNIVERSARY CAKES SECTION STARTED
+================================================== */
+
+.anniversary-cakes-section {
+  position: relative;
+
+  min-height: calc(100vh - 82px);
+  height: calc(100vh - 82px);
+
+  box-sizing: border-box;
+
+  padding: 28px 0 20px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 8% 22%,
+      rgba(255, 184, 198, 0.16),
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at 92% 84%,
+      rgba(205, 158, 116, 0.1),
+      transparent 24%
+    ),
+    linear-gradient(120deg, #fff7f6 0%, #ffffff 50%, #fff1f3 100%);
+}
+
+.anniversary-cakes-container {
+  position: relative;
+
+  z-index: 2;
+}
+
+/* ==================================================
+   ANNIVERSARY CAKES HEADING STARTED
+================================================== */
+
+.anniversary-cakes-heading {
+  max-width: 850px;
+
+  margin-bottom: 16px;
+}
+
+.anniversary-cakes-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  color: #ff5c78;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.55px;
+
+  text-transform: uppercase;
+}
+
+.anniversary-cakes-title {
+  margin: 0;
+
+  color: #42190d;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.7rem, 3.8vw, 4.05rem);
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: -1.4px;
+}
+
+.anniversary-cakes-title span {
+  display: block;
+  white-space: nowrap;
+  color: #ff5c78;
+}
+
+.anniversary-cakes-description {
+  max-width: 650px;
+
+  margin: 12px 0 0;
+
+  color: #795c53;
+
+  font-size: 8px;
+
+  line-height: 1.7;
+}
+
+/* ==================================================
+   ANNIVERSARY CAKES HEADING ENDED
+================================================== */
+
+/* ==================================================
+   ANNIVERSARY CAKES LAYOUT STARTED
+================================================== */
+
+.anniversary-cakes-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(0, 1.05fr);
+
+  gap: 16px;
+
+  align-items: stretch;
+}
+
+/* ==================================================
+   ANNIVERSARY SMALL CARDS STARTED
+================================================== */
+
+.anniversary-cakes-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+.anniversary-cake-card {
+  min-width: 0;
+
+  overflow: hidden;
+
+  border: 1px solid #ead7d4;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow: 0 7px 18px rgba(66, 25, 13, 0.035);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.anniversary-cake-card:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(255, 92, 120, 0.46);
+
+  box-shadow: 0 13px 28px rgba(66, 25, 13, 0.07);
+}
+
+.anniversary-cake-image {
+  position: relative;
+
+  height: 124px;
+
+  overflow: hidden;
+
+  background: #fff2f2;
+}
+
+.anniversary-cake-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition: transform 0.4s ease;
+}
+
+.anniversary-cake-card:hover .anniversary-cake-image img {
+  transform: scale(1.035);
+}
+
+.anniversary-cake-image > span {
+  position: absolute;
+
+  top: 10px;
+  left: 10px;
+
+  display: grid;
+
+  min-width: 30px;
+  height: 24px;
+
+  place-items: center;
+
+  padding: 0 7px;
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  color: #ff5c78;
+
+  font-family: var(--font-heading);
+
+  font-size: 7px;
+}
+
+.anniversary-cake-content {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  padding: 9px 13px;
+}
+
+.anniversary-cake-content small {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #bd958e;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.55px;
+}
+
+.anniversary-cake-content h3 {
+  margin: 0;
+
+  color: #4b291f;
+
+  font-family: var(--font-heading);
+
+  font-size: 17px;
+
+  line-height: 1;
+}
+
+.anniversary-cake-content > a {
+  display: grid;
+
+  width: 29px;
+  height: 29px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border: 1px solid #ead8d2;
+  border-radius: 50%;
+
+  color: #d39b91;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.anniversary-cake-content > a:hover {
+  transform: translateX(2px);
+
+  border-color: #ff5c78;
+
+  background: #ff5c78;
+
+  color: #ffffff;
+}
+
+/* ==================================================
+   ANNIVERSARY SMALL CARDS ENDED
+================================================== */
+
+/* ==================================================
+   FEATURED ANNIVERSARY CAKE STARTED
+================================================== */
+
+.anniversary-featured-card {
+  min-width: 0;
+}
+
+.anniversary-featured-image {
+  position: relative;
+
+  height: 356px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #fff1f1;
+
+  box-shadow: 0 14px 34px rgba(66, 25, 13, 0.08);
+}
+
+.anniversary-featured-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.anniversary-featured-card:hover .anniversary-featured-image img {
+  transform: scale(1.035);
+}
+
+.anniversary-featured-badge {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  z-index: 2;
+
+  padding: 6px 9px;
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  color: #ff5c78;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+}
+
+.anniversary-featured-overlay {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  padding: 54px 18px 18px;
+
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(55, 19, 14, 0.82) 100%
+  );
+
+  color: #ffffff;
+}
+
+.anniversary-featured-overlay > span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #ffd4dc;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+}
+
+.anniversary-featured-overlay h3 {
+  margin: 0 0 6px;
+
+  font-family: var(--font-heading);
+
+  font-size: 24px;
+
+  line-height: 1;
+}
+
+.anniversary-featured-overlay p {
+  max-width: 420px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.84);
+
+  font-size: 6.5px;
+
+  line-height: 1.55;
+}
+
+.anniversary-featured-overlay a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 12px;
+
+  color: #ffffff;
+
+  font-size: 6.5px;
+  font-weight: 600;
+}
+
+/* ==================================================
+   FEATURED ANNIVERSARY CAKE ENDED
+================================================== */
+
+/* ==================================================
+   ANNIVERSARY CAKES BOTTOM BAR STARTED
+================================================== */
+
+.anniversary-cakes-bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  margin-top: 8px;
+
+  border: 1px solid #ead9d3;
+  border-radius: 11px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  box-shadow: 0 7px 18px rgba(66, 25, 13, 0.035);
+}
+
+.anniversary-cakes-bottom > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.anniversary-cakes-bottom > div > span {
+  display: grid;
+
+  width: 31px;
+  height: 31px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #fff0f3;
+
+  color: #ff5c78;
+}
+
+.anniversary-cakes-bottom strong,
+.anniversary-cakes-bottom small {
+  display: block;
+}
+
+.anniversary-cakes-bottom strong {
+  color: #4d2e24;
+
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.anniversary-cakes-bottom small {
+  margin-top: 2px;
+
+  color: #987e76;
+
+  font-size: 5.5px;
+}
+
+.anniversary-cakes-bottom > a {
+  display: inline-flex;
+
+  min-height: 32px;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 0 12px;
+
+  border-radius: 7px;
+
+  background: #fff0f3;
+
+  color: #ff5c78;
+
+  font-size: 6.5px;
+  font-weight: 600;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.anniversary-cakes-bottom > a:hover {
+  transform: translateY(-1px);
+
+  background: #ff5c78;
+
+  color: #ffffff;
+}
+
+/* ==================================================
+   ANNIVERSARY CAKES RESPONSIVE STARTED
+================================================== */
+
+@media (max-width: 1000px) {
+  .anniversary-cakes-section {
+    min-height: auto;
+  }
+
+  .anniversary-cakes-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .anniversary-featured-image {
+    height: 460px;
+  }
+}
+
+@media (max-width: 650px) {
+  .anniversary-cakes-heading {
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+  }
+
+  .anniversary-cakes-description {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .anniversary-cakes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .anniversary-cake-image {
+    height: 220px;
+  }
+
+  .anniversary-cakes-bottom {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .anniversary-cakes-bottom > a {
+    width: 100%;
+  }
+}
+
+/* ==================================================
+   ANNIVERSARY CAKES SECTION ENDED
+================================================== */
+
+/* ==================================================
+   WEDDING CAKES SECTION STARTED
+================================================== */
+
+.wedding-cakes-section {
+  position: relative;
+
+  min-height: calc(100vh - 82px);
+  height: calc(100vh - 82px);
+
+  box-sizing: border-box;
+
+  padding: 28px 0 20px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 88% 20%,
+      rgba(255, 220, 225, 0.32),
+      transparent 28%
+    ),
+    #fffaf8;
+}
+
+.wedding-cakes-grid {
+  display: grid;
+
+  grid-template-columns: 1.58fr 2fr;
+
+  gap: 16px;
+
+  margin-top: 16px;
+}
+
+/* ==================================================
+   FEATURED WEDDING CARD
+================================================== */
+
+.wedding-featured-card {
+  position: relative;
+
+  min-height: 356px;
+  height: 356px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #f5e8df;
+}
+
+.wedding-featured-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(54, 22, 12, 0.82) 0%,
+    rgba(54, 22, 12, 0.25) 38%,
+    transparent 64%
+  );
+  pointer-events: none;
+}
+
+.wedding-card-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+.wedding-featured-badge {
+  position: absolute;
+  z-index: 2;
+  top: 16px;
+  left: 16px;
+
+  padding: 8px 13px;
+  border-radius: 8px;
+
+  background: #fff;
+  color: var(--color-primary, #ff5870);
+
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.wedding-featured-overlay {
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+
+  color: #fff;
+}
+
+.wedding-card-kicker {
+  display: block;
+  margin-bottom: 7px;
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.wedding-featured-overlay h3 {
+  margin: 0 0 5px;
+
+  color: #ffffff;
+
+  font-family: var(--font-heading);
+  font-size: clamp(25px, 2vw, 34px);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.wedding-featured-overlay p {
+  max-width: 500px;
+  margin: 0 0 11px;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.wedding-featured-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ==================================================
+   SMALL WEDDING CARDS
+================================================== */
+
+.wedding-small-cards {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+}
+
+.wedding-small-card {
+  overflow: hidden;
+  border: 1px solid #ead8cf;
+  border-radius: 18px;
+  background: #fff;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.wedding-small-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(86, 44, 30, 0.08);
+}
+
+.wedding-small-image {
+  position: relative;
+
+  height: 124px;
+
+  overflow: hidden;
+}
+
+.wedding-small-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.45s ease;
+}
+
+.wedding-small-card:hover .wedding-small-image img {
+  transform: scale(1.04);
+}
+
+.wedding-card-number {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  min-width: 31px;
+  padding: 7px 9px;
+
+  border-radius: 8px;
+  background: #fff;
+
+  color: var(--color-primary, #ff5870);
+  font-size: 9px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.wedding-small-content {
+  min-height: 46px;
+
+  padding: 8px 13px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.wedding-card-label {
+  display: block;
+  margin-bottom: 3px;
+
+  color: #b08072;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.wedding-small-content h3 {
+  margin: 0;
+
+  color: #431b10;
+  font-family: var(--font-heading);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.wedding-card-arrow {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid #eccfc5;
+  border-radius: 50%;
+
+  color: #d98272;
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.wedding-card-arrow:hover {
+  background: var(--color-primary, #ff5870);
+  color: #fff;
+  transform: translateX(2px);
+}
+
+/* ==================================================
+   WEDDING CTA STRIP
+================================================== */
+
+.wedding-cta-strip {
+  margin-top: 8px;
+
+  padding: 10px 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  border: 1px solid #ead8cf;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.84);
+}
+
+.wedding-cta-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wedding-cta-icon {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  background: #fff3f4;
+
+  color: var(--color-primary, #ff5870);
+  font-size: 17px;
+}
+
+.wedding-cta-content h3 {
+  margin: 0 0 3px;
+
+  color: #431b10;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.wedding-cta-content p {
+  margin: 0;
+
+  color: #8a7168;
+  font-size: 8px;
+}
+
+.wedding-cta-button {
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 11px 16px;
+  border-radius: 9px;
+
+  background: #fff1f3;
+  color: var(--color-primary, #ff5870);
+
+  font-size: 9px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.wedding-cta-button:hover {
+  background: var(--color-primary, #ff5870);
+  color: #fff;
+}
+
+/* ==================================================
+   WEDDING TITLE TWO-LINE LAYOUT STARTED
+================================================== */
+
+.wedding-cakes-title {
+  max-width: 900px;
+}
+
+.wedding-cakes-title span {
+  display: block;
+  white-space: nowrap;
+}
+
+/* ==================================================
+   WEDDING TITLE TWO-LINE LAYOUT ENDED
+================================================== */
+
+/* ==================================================
+   WEDDING HEADING COLORS STARTED
+================================================== */
+
+.wedding-cakes-section .occasion-showcase-eyebrow {
+  color: #ff5c78;
+}
+
+.wedding-cakes-title {
+  color: #4a1f14;
+}
+
+.wedding-cakes-title span {
+  display: block;
+  color: #ff5c78;
+}
+
+.wedding-cakes-section .occasion-showcase-text {
+  color: #7a5a50;
+}
+
+/* ==================================================
+   WEDDING HEADING COLORS ENDED
+================================================== */
+
+/* ==================================================
+   WEDDING RESPONSIVE
+================================================== */
+
+@media (max-width: 991px) {
+  .wedding-cakes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wedding-featured-card {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 640px) {
+  .wedding-small-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .wedding-featured-card {
+    min-height: 460px;
+  }
+
+  .wedding-cta-strip {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .wedding-cta-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ==================================================
+   WEDDING CAKES SECTION ENDED
+================================================== */
+
+/* ==================================================
+   ENGAGEMENT CAKES SECTION STARTED
+================================================== */
+
+.engagement-cakes-section {
+  position: relative;
+
+  min-height: calc(100vh - 82px);
+  height: calc(100vh - 82px);
+
+  box-sizing: border-box;
+
+  padding: 28px 0 20px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(255, 188, 202, 0.16),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(221, 176, 138, 0.11),
+      transparent 24%
+    ),
+    linear-gradient(120deg, #fff8f6 0%, #ffffff 50%, #fff1f3 100%);
+}
+
+.engagement-cakes-container {
+  position: relative;
+
+  z-index: 2;
+}
+
+/* ==================================================
+   ENGAGEMENT CAKES HEADING STARTED
+================================================== */
+
+.engagement-cakes-heading {
+  max-width: 880px;
+
+  margin-bottom: 16px;
+}
+
+.engagement-cakes-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  color: #ff5c78;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.55px;
+
+  text-transform: uppercase;
+}
+
+.engagement-cakes-title {
+  margin: 0;
+
+  color: #4a1f14;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.7rem, 3.8vw, 4.05rem);
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: -1.4px;
+}
+
+.engagement-cakes-title span {
+  display: block;
+
+  color: #ff5c78;
+
+  white-space: nowrap;
+}
+
+.engagement-cakes-description {
+  max-width: 700px;
+
+  margin: 12px 0 0;
+
+  color: #7a5a50;
+
+  font-size: 8px;
+
+  line-height: 1.7;
+}
+
+/* ==================================================
+   ENGAGEMENT CAKES HEADING ENDED
+================================================== */
+
+/* ==================================================
+   ENGAGEMENT CAKES LAYOUT STARTED
+================================================== */
+
+.engagement-cakes-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(0, 1.05fr);
+
+  gap: 16px;
+
+  align-items: stretch;
+
+  margin-bottom: 0;
+}
+
+/* ==================================================
+   ENGAGEMENT SMALL CARDS STARTED
+================================================== */
+
+.engagement-cakes-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+.engagement-cake-card {
+  min-width: 0;
+
+  overflow: hidden;
+
+  border: 1px solid #ead7d4;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow: 0 7px 18px rgba(66, 25, 13, 0.035);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.engagement-cake-card:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(255, 92, 120, 0.46);
+
+  box-shadow: 0 13px 28px rgba(66, 25, 13, 0.07);
+}
+
+.engagement-cake-image {
+  position: relative;
+
+  height: 124px;
+
+  overflow: hidden;
+
+  background: #fff2f2;
+}
+
+.engagement-cake-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition: transform 0.4s ease;
+}
+
+.engagement-cake-card:hover .engagement-cake-image img {
+  transform: scale(1.035);
+}
+
+.engagement-cake-image > span {
+  position: absolute;
+
+  top: 10px;
+  left: 10px;
+
+  display: grid;
+
+  min-width: 30px;
+  height: 24px;
+
+  place-items: center;
+
+  padding: 0 7px;
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  color: #ff5c78;
+
+  font-family: var(--font-heading);
+
+  font-size: 7px;
+}
+
+.engagement-cake-content {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  padding: 9px 13px;
+}
+
+.engagement-cake-content small {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #c47c70;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.55px;
+}
+
+.engagement-cake-content h3 {
+  margin: 0;
+
+  color: #4a1f14;
+
+  font-family: var(--font-heading);
+
+  font-size: 17px;
+
+  line-height: 1;
+}
+
+.engagement-cake-content > a {
+  display: grid;
+
+  width: 29px;
+  height: 29px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border: 1px solid #ead8d2;
+  border-radius: 50%;
+
+  color: #d39b91;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.engagement-cake-content > a:hover {
+  transform: translateX(2px);
+
+  border-color: #ff5c78;
+
+  background: #ff5c78;
+
+  color: #ffffff;
+}
+
+/* ==================================================
+   ENGAGEMENT SMALL CARDS ENDED
+================================================== */
+
+/* ==================================================
+   FEATURED ENGAGEMENT CARD STARTED
+================================================== */
+
+.engagement-featured-card {
+  min-width: 0;
+}
+
+.engagement-featured-image {
+  position: relative;
+
+  height: 356px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #fff1f1;
+
+  box-shadow: 0 14px 34px rgba(66, 25, 13, 0.08);
+}
+
+.engagement-featured-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(54, 22, 12, 0.82) 0%,
+    rgba(54, 22, 12, 0.2) 40%,
+    transparent 64%
+  );
+
+  pointer-events: none;
+}
+
+.engagement-featured-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.engagement-featured-card:hover .engagement-featured-image img {
+  transform: scale(1.035);
+}
+
+.engagement-featured-badge {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  z-index: 2;
+
+  padding: 6px 9px;
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  color: #ff5c78;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+}
+
+.engagement-featured-overlay {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 2;
+
+  padding: 54px 18px 18px;
+
+  color: #ffffff;
+}
+
+.engagement-featured-overlay > span {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #ffffff;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+}
+
+.engagement-featured-overlay h3 {
+  margin: 0 0 6px;
+
+  color: #ffffff;
+
+  font-family: var(--font-heading);
+
+  font-size: 24px;
+
+  line-height: 1;
+}
+
+.engagement-featured-overlay p {
+  max-width: 420px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 6.5px;
+
+  line-height: 1.55;
+}
+
+.engagement-featured-overlay a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 12px;
+
+  color: #ffffff;
+
+  font-size: 6.5px;
+  font-weight: 600;
+}
+
+/* ==================================================
+   FEATURED ENGAGEMENT CARD ENDED
+================================================== */
+
+/* ==================================================
+   ENGAGEMENT CTA STRIP STARTED
+================================================== */
+
+.engagement-cakes-bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  margin-top: 8px;
+
+  padding: 11px 14px;
+
+  border: 1px solid #ead9d3;
+  border-radius: 11px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  box-shadow: 0 7px 18px rgba(66, 25, 13, 0.035);
+}
+
+.engagement-cakes-bottom > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.engagement-cakes-bottom > div > span {
+  display: grid;
+
+  width: 31px;
+  height: 31px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #fff0f3;
+
+  color: #ff5c78;
+}
+
+.engagement-cakes-bottom strong,
+.engagement-cakes-bottom small {
+  display: block;
+}
+
+.engagement-cakes-bottom strong {
+  color: #4a1f14;
+
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.engagement-cakes-bottom small {
+  margin-top: 2px;
+
+  color: #987e76;
+
+  font-size: 5.5px;
+}
+
+.engagement-cakes-bottom > a {
+  display: inline-flex;
+
+  min-height: 32px;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 0 12px;
+
+  border-radius: 7px;
+
+  background: #fff0f3;
+
+  color: #ff5c78;
+
+  font-size: 6.5px;
+  font-weight: 600;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.engagement-cakes-bottom > a:hover {
+  transform: translateY(-1px);
+
+  background: #ff5c78;
+
+  color: #ffffff;
+}
+
+/* ==================================================
+   ENGAGEMENT RESPONSIVE STARTED
+================================================== */
+
+@media (max-width: 1000px) {
+  .engagement-cakes-section {
+    min-height: auto;
+  }
+
+  .engagement-cakes-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .engagement-featured-image {
+    height: 460px;
+  }
+
+  .engagement-cakes-title span {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 650px) {
+  .engagement-cakes-heading {
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+  }
+
+  .engagement-cakes-description {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .engagement-cakes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .engagement-cake-image {
+    height: 220px;
+  }
+
+  .engagement-cakes-bottom {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .engagement-cakes-bottom > a {
+    width: 100%;
+  }
+}
+
+/* ==================================================
+   ENGAGEMENT CAKES SECTION ENDED
+================================================== */
+
+/* ==================================================
+   BABY SHOWER CAKES SECTION STARTED
+================================================== */
+
+.baby-shower-section {
+  position: relative;
+
+  min-height: calc(100vh - 82px);
+  height: calc(100vh - 82px);
+
+  box-sizing: border-box;
+
+  padding: 28px 0 20px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 8% 22%,
+      rgba(255, 190, 205, 0.16),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 92% 80%,
+      rgba(224, 190, 145, 0.1),
+      transparent 25%
+    ),
+    linear-gradient(120deg, #fff9f7 0%, #ffffff 50%, #fff3f4 100%);
+}
+
+.baby-shower-section .occasion-showcase-container {
+  position: relative;
+
+  z-index: 2;
+}
+
+/* ==================================================
+   BABY SHOWER HEADING STARTED
+================================================== */
+
+.baby-shower-section .occasion-showcase-heading {
+  max-width: 900px;
+
+  margin-bottom: 16px;
+}
+
+.baby-shower-section .occasion-showcase-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  color: #ff5c78;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.55px;
+
+  text-transform: uppercase;
+}
+
+.baby-shower-section .occasion-showcase-title {
+  margin: 0;
+
+  color: #4a1f14;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.7rem, 3.8vw, 4.05rem);
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: -1.4px;
+}
+
+.baby-shower-section .occasion-showcase-title span:first-child {
+  display: block;
+
+  color: #4a1f14;
+
+  white-space: nowrap;
+}
+
+.baby-shower-section .occasion-showcase-title span:last-child {
+  display: block;
+
+  color: #ff5c78;
+
+  white-space: nowrap;
+}
+
+.baby-shower-section .occasion-showcase-description {
+  max-width: 720px;
+
+  margin: 12px 0 0;
+
+  color: #7a5a50;
+
+  font-size: 8px;
+
+  line-height: 1.7;
+}
+
+/* ==================================================
+   BABY SHOWER HEADING ENDED
+================================================== */
+
+/* ==================================================
+   BABY SHOWER MAIN LAYOUT STARTED
+================================================== */
+
+.baby-shower-section .occasion-showcase-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(0, 1.05fr);
+
+  gap: 16px;
+
+  align-items: stretch;
+}
+
+/* ==================================================
+   BABY SHOWER SMALL CARD GRID STARTED
+================================================== */
+
+.baby-shower-section .occasion-showcase-small-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+.baby-shower-section .occasion-small-card {
+  min-width: 0;
+
+  overflow: hidden;
+
+  border: 1px solid #ead7d4;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow: 0 7px 18px rgba(66, 25, 13, 0.035);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.baby-shower-section .occasion-small-card:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(255, 92, 120, 0.46);
+
+  box-shadow: 0 13px 28px rgba(66, 25, 13, 0.07);
+}
+
+.baby-shower-section .occasion-small-image {
+  position: relative;
+
+  height: 124px;
+
+  overflow: hidden;
+
+  background: #fff2f2;
+}
+
+.baby-shower-section .occasion-small-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.4s ease;
+}
+
+.baby-shower-section .occasion-small-card:hover .occasion-small-image img {
+  transform: scale(1.035);
+}
+
+.baby-shower-section .occasion-card-number {
+  position: absolute;
+
+  top: 10px;
+  left: 10px;
+
+  display: grid;
+
+  min-width: 30px;
+  height: 24px;
+
+  place-items: center;
+
+  padding: 0 7px;
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  color: #ff5c78;
+
+  font-family: var(--font-heading);
+
+  font-size: 7px;
+}
+
+/* ==================================================
+   BABY SHOWER SMALL CARD CONTENT STARTED
+================================================== */
+
+.baby-shower-section .occasion-small-content {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  padding: 9px 13px;
+}
+
+.baby-shower-section .occasion-card-category {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #c47c70;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.55px;
+}
+
+.baby-shower-section .occasion-small-content h3 {
+  margin: 0;
+
+  color: #4a1f14;
+
+  font-family: var(--font-heading);
+
+  font-size: 17px;
+
+  line-height: 1;
+}
+
+.baby-shower-section .occasion-card-arrow {
+  display: grid;
+
+  width: 29px;
+  height: 29px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border: 1px solid #ead8d2;
+  border-radius: 50%;
+
+  color: #d39b91;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.baby-shower-section .occasion-card-arrow:hover {
+  transform: translateX(2px);
+
+  border-color: #ff5c78;
+
+  background: #ff5c78;
+
+  color: #ffffff;
+}
+
+/* ==================================================
+   BABY SHOWER SMALL CARDS ENDED
+================================================== */
+
+/* ==================================================
+   BABY SHOWER FEATURED CARD STARTED
+================================================== */
+
+.baby-shower-section .occasion-feature-card {
+  position: relative;
+
+  min-width: 0;
+  height: 356px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #fff1f1;
+
+  box-shadow: 0 14px 34px rgba(66, 25, 13, 0.08);
+}
+
+.baby-shower-section .occasion-feature-card > img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+.baby-shower-section .occasion-feature-card:hover > img {
+  transform: scale(1.035);
+}
+
+.baby-shower-section .occasion-feature-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background: linear-gradient(
+    to top,
+    rgba(54, 22, 12, 0.82) 0%,
+    rgba(54, 22, 12, 0.18) 42%,
+    transparent 66%
+  );
+
+  pointer-events: none;
+}
+
+.baby-shower-section .occasion-feature-badge {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  z-index: 3;
+
+  padding: 6px 9px;
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  color: #ff5c78;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+}
+
+.baby-shower-section .occasion-feature-content {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 2;
+
+  padding: 54px 18px 18px;
+
+  color: #ffffff;
+}
+
+.baby-shower-section .occasion-feature-number {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #ffffff;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+}
+
+.baby-shower-section .occasion-feature-content h3 {
+  margin: 0 0 6px;
+
+  color: #ffffff;
+
+  font-family: var(--font-heading);
+
+  font-size: 24px;
+
+  line-height: 1;
+}
+
+.baby-shower-section .occasion-feature-content p {
+  max-width: 420px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 6.5px;
+
+  line-height: 1.55;
+}
+
+.baby-shower-section .occasion-feature-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 12px;
+
+  color: #ffffff;
+
+  font-size: 6.5px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+/* ==================================================
+   BABY SHOWER FEATURED CARD ENDED
+================================================== */
+
+/* ==================================================
+   BABY SHOWER CTA STRIP STARTED
+================================================== */
+
+.baby-shower-section .occasion-personalise-strip {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  margin-top: 8px;
+
+  padding: 11px 14px;
+
+  border: 1px solid #ead9d3;
+  border-radius: 11px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  box-shadow: 0 7px 18px rgba(66, 25, 13, 0.035);
+}
+
+.baby-shower-section .occasion-personalise-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.baby-shower-section .occasion-personalise-icon {
+  display: grid;
+
+  width: 31px;
+  height: 31px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #fff0f3;
+
+  color: #ff5c78;
+}
+
+.baby-shower-section .occasion-personalise-info h3 {
+  margin: 0;
+
+  color: #4a1f14;
+
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.baby-shower-section .occasion-personalise-info p {
+  margin: 2px 0 0;
+
+  color: #987e76;
+
+  font-size: 5.5px;
+}
+
+.baby-shower-section .occasion-personalise-btn {
+  display: inline-flex;
+
+  min-height: 32px;
+
+  flex-shrink: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 0 12px;
+
+  border-radius: 7px;
+
+  background: #fff0f3;
+
+  color: #ff5c78;
+
+  font-size: 6.5px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.baby-shower-section .occasion-personalise-btn:hover {
+  transform: translateY(-1px);
+
+  background: #ff5c78;
+
+  color: #ffffff;
+}
+
+/* ==================================================
+   BABY SHOWER RESPONSIVE STARTED
+================================================== */
+
+@media (max-width: 1000px) {
+  .baby-shower-section {
+    min-height: auto;
+  }
+
+  .baby-shower-section .occasion-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .baby-shower-section .occasion-feature-card {
+    height: 460px;
+  }
+
+  .baby-shower-section .occasion-showcase-title span {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 650px) {
+  .baby-shower-section .occasion-showcase-small-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .baby-shower-section .occasion-small-image {
+    height: 220px;
+  }
+
+  .baby-shower-section .occasion-personalise-strip {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .baby-shower-section .occasion-personalise-btn {
+    width: 100%;
+  }
+}
+
+/* ==================================================
+   BABY SHOWER CAKES SECTION ENDED
+================================================== */
+
+/* ==================================================
+   CORPORATE EVENTS SECTION STARTED
+================================================== */
+
+.corporate-showcase {
+  position: relative;
+
+  min-height: calc(100vh - 82px);
+  height: calc(100vh - 82px);
+
+  box-sizing: border-box;
+
+  padding: 28px 0 20px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 8% 20%,
+      rgba(226, 187, 151, 0.13),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 92% 78%,
+      rgba(255, 198, 207, 0.12),
+      transparent 25%
+    ),
+    linear-gradient(120deg, #fffaf8 0%, #ffffff 50%, #fff5f3 100%);
+}
+
+.corporate-showcase > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* ==================================================
+   CORPORATE EVENTS HEADING STARTED
+================================================== */
+
+.corporate-showcase .occasion-heading {
+  max-width: 960px;
+
+  margin-bottom: 16px;
+}
+
+.corporate-showcase .section-subtitle {
+  display: inline-block;
+
+  margin-bottom: 8px;
+
+  color: #ff5c78;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.55px;
+
+  text-transform: uppercase;
+}
+
+.corporate-showcase .occasion-title {
+  margin: 0;
+
+  color: #4a1f14;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.7rem, 3.8vw, 4.05rem);
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  letter-spacing: -1.4px;
+}
+
+.corporate-showcase .occasion-title span {
+  display: block;
+
+  color: #ff5c78;
+
+  white-space: nowrap;
+}
+
+.corporate-showcase .occasion-text {
+  max-width: 780px;
+
+  margin: 12px 0 0;
+
+  color: #7a5a50;
+
+  font-size: 8px;
+
+  line-height: 1.7;
+}
+
+/* ==================================================
+   CORPORATE EVENTS HEADING ENDED
+================================================== */
+
+/* ==================================================
+   CORPORATE EVENTS MAIN GRID STARTED
+================================================== */
+
+.corporate-showcase .showcase-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(0, 1.05fr);
+
+  gap: 16px;
+
+  align-items: stretch;
+}
+
+/* ==================================================
+   CORPORATE EVENTS SMALL CARDS STARTED
+================================================== */
+
+.corporate-showcase .showcase-cards {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+.corporate-showcase .mini-card {
+  position: relative;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  border: 1px solid #ead7d4;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow: 0 7px 18px rgba(66, 25, 13, 0.035);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.corporate-showcase .mini-card:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(213, 168, 122, 0.7);
+
+  box-shadow: 0 13px 28px rgba(66, 25, 13, 0.07);
+}
+
+.corporate-showcase .mini-card > img {
+  display: block;
+
+  width: 100%;
+  height: 124px;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.4s ease;
+}
+
+.corporate-showcase .mini-card:hover > img {
+  transform: scale(1.035);
+}
+
+/* ==================================================
+   CORPORATE EVENTS CARD NUMBER
+================================================== */
+
+.corporate-showcase .card-number {
+  position: absolute;
+
+  top: 10px;
+  left: 10px;
+
+  z-index: 2;
+
+  display: grid;
+
+  min-width: 30px;
+  height: 24px;
+
+  place-items: center;
+
+  padding: 0 7px;
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  color: #ff5c78;
+
+  font-size: 7px;
+  font-weight: 600;
+}
+
+/* ==================================================
+   CORPORATE EVENTS SMALL CARD CONTENT
+================================================== */
+
+.corporate-showcase .mini-content {
+  padding: 8px 13px;
+}
+
+.corporate-showcase .mini-label {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #c47c70;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.55px;
+}
+
+.corporate-showcase .mini-bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.corporate-showcase .mini-bottom h3 {
+  margin: 0;
+
+  color: #4a1f14;
+
+  font-family: var(--font-heading);
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  line-height: 1;
+}
+
+.corporate-showcase .mini-bottom button {
+  display: grid;
+
+  width: 29px;
+  height: 29px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  padding: 0;
+
+  border: 1px solid #ead8d2;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #d39b91;
+
+  font: inherit;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.corporate-showcase .mini-bottom button:hover {
+  transform: translateX(2px);
+
+  border-color: #ff5c78;
+
+  background: #ff5c78;
+
+  color: #ffffff;
+}
+
+/* ==================================================
+   CORPORATE EVENTS SMALL CARDS ENDED
+================================================== */
+
+/* ==================================================
+   CORPORATE FEATURED CARD STARTED
+================================================== */
+
+.corporate-showcase .feature-card {
+  position: relative;
+
+  min-width: 0;
+  height: 356px;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: #f5eee9;
+
+  box-shadow: 0 14px 34px rgba(66, 25, 13, 0.08);
+}
+
+.corporate-showcase .feature-card > img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+.corporate-showcase .feature-card:hover > img {
+  transform: scale(1.035);
+}
+
+.corporate-showcase .feature-card::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background: linear-gradient(
+    to top,
+    rgba(49, 28, 18, 0.84) 0%,
+    rgba(49, 28, 18, 0.22) 40%,
+    transparent 66%
+  );
+
+  pointer-events: none;
+}
+
+/* ==================================================
+   CORPORATE FEATURE BADGE
+================================================== */
+
+.corporate-showcase .feature-badge {
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  z-index: 3;
+
+  padding: 6px 10px;
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  color: #ff5c78;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.55px;
+}
+
+/* ==================================================
+   CORPORATE FEATURE CONTENT
+================================================== */
+
+.corporate-showcase .feature-overlay {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 2;
+
+  padding: 54px 18px 18px;
+
+  color: #ffffff;
+}
+
+.corporate-showcase .feature-label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #ffffff;
+
+  font-size: 5.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+}
+
+.corporate-showcase .feature-overlay h3 {
+  margin: 0 0 6px;
+
+  color: #ffffff;
+
+  font-family: var(--font-heading);
+
+  font-size: 24px;
+
+  font-weight: 600;
+
+  line-height: 1;
+}
+
+.corporate-showcase .feature-overlay p {
+  max-width: 420px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 6.5px;
+
+  line-height: 1.55;
+}
+
+.corporate-showcase .feature-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 12px;
+
+  color: #ffffff;
+
+  font-size: 6.5px;
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+/* ==================================================
+   CORPORATE FEATURED CARD ENDED
+================================================== */
+
+/* ==================================================
+   CORPORATE CTA STRIP STARTED
+================================================== */
+
+.corporate-showcase .occasion-strip {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  margin-top: 8px;
+
+  padding: 11px 14px;
+
+  border: 1px solid #ead9d3;
+  border-radius: 11px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  box-shadow: 0 7px 18px rgba(66, 25, 13, 0.035);
+}
+
+.corporate-showcase .strip-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.corporate-showcase .strip-icon {
+  display: grid;
+
+  width: 31px;
+  height: 31px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #fff3e8;
+
+  font-size: 13px;
+}
+
+.corporate-showcase .strip-left h4 {
+  margin: 0;
+
+  color: #4a1f14;
+
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.corporate-showcase .strip-left p {
+  margin: 2px 0 0;
+
+  color: #987e76;
+
+  font-size: 5.5px;
+}
+
+.corporate-showcase .strip-btn {
+  display: inline-flex;
+
+  min-height: 32px;
+
+  flex-shrink: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 12px;
+
+  border-radius: 7px;
+
+  background: #fff0f3;
+
+  color: #ff5c78;
+
+  font-size: 6.5px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.corporate-showcase .strip-btn:hover {
+  transform: translateY(-1px);
+
+  background: #ff5c78;
+
+  color: #ffffff;
+}
+
+/* ==================================================
+   CORPORATE CTA STRIP ENDED
+================================================== */
+
+/* ==================================================
+   CORPORATE EVENTS RESPONSIVE STARTED
+================================================== */
+
+@media (max-width: 1000px) {
+  .corporate-showcase {
+    min-height: auto;
+  }
+
+  .corporate-showcase .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .corporate-showcase .feature-card {
+    height: 460px;
+  }
+
+  .corporate-showcase .occasion-title span {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 650px) {
+  .corporate-showcase .showcase-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .corporate-showcase .mini-card > img {
+    height: 220px;
+  }
+
+  .corporate-showcase .occasion-strip {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .corporate-showcase .strip-btn {
+    width: 100%;
+  }
+}
+
+/* ==================================================
+   CORPORATE EVENTS SECTION ENDED
+================================================== */
+
+/* ==================================================
+   CELEBRATION CTA SECTION STARTED
+================================================== */
+
+.occasion-final-cta {
+  position: relative;
+
+  min-height: calc(100vh - 82px);
+  height: calc(100vh - 82px);
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
+  padding: 32px 0;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(255, 255, 255, 0.15),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(255, 255, 255, 0.1),
+      transparent 24%
+    ),
+    linear-gradient(120deg, #4a1f14 0%, #63291d 52%, #4a1f14 100%);
+}
+
+/* ==================================================
+   CTA CONTAINER
+================================================== */
+
+.occasion-final-cta-container {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+/* ==================================================
+   CTA DECORATIONS
+================================================== */
+
+.occasion-cta-decoration {
+  position: absolute;
+
+  color: rgba(255, 255, 255, 0.12);
+
+  pointer-events: none;
+}
+
+.decoration-one {
+  top: -14px;
+  left: 3%;
+
+  font-size: 52px;
+}
+
+.decoration-two {
+  right: 4%;
+  bottom: 20px;
+
+  font-size: 38px;
+}
+
+/* ==================================================
+   CTA CONTENT
+================================================== */
+
+.occasion-final-cta-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 880px;
+
+  margin: 0 auto;
+}
+
+.occasion-final-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 12px;
+
+  color: #ff9bad;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 1.7px;
+
+  text-transform: uppercase;
+}
+
+.occasion-final-title {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family: var(--font-heading);
+
+  font-size: clamp(2.6rem, 4vw, 4rem);
+
+  font-weight: 700;
+
+  line-height: 1.02;
+
+  letter-spacing: -1.3px;
+}
+
+.occasion-final-title span {
+  display: block;
+
+  color: #ff8097;
+}
+
+.occasion-final-text {
+  max-width: 660px;
+
+  margin: 16px auto 0;
+
+  color: rgba(255, 255, 255, 0.76);
+
+  font-size: 11px;
+
+  line-height: 1.75;
+}
+
+/* ==================================================
+   CTA BUTTONS
+================================================== */
+
+.occasion-final-actions {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 24px;
+}
+
+.occasion-final-btn {
+  display: inline-flex;
+
+  min-height: 43px;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 0 18px;
+
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.occasion-final-btn:hover {
+  transform: translateY(-2px);
+}
+
+.occasion-final-btn-primary {
+  background: #ff627e;
+
+  color: #ffffff;
+}
+
+.occasion-final-btn-primary:hover {
+  background: #ff7890;
+}
+
+.occasion-final-btn-secondary {
+  border-color: rgba(255, 255, 255, 0.3);
+
+  background: rgba(255, 255, 255, 0.07);
+
+  color: #ffffff;
+}
+
+.occasion-final-btn-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.65);
+
+  background: rgba(255, 255, 255, 0.13);
+}
+
+/* ==================================================
+   CTA BENEFITS STARTED
+================================================== */
+
+.occasion-final-benefits {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  width: min(760px, 100%);
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 36px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.occasion-final-benefit {
+  display: flex;
+
+  flex: 1;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  text-align: left;
+}
+
+.occasion-benefit-icon {
+  display: grid;
+
+  width: 31px;
+  height: 31px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.07);
+
+  color: #ff91a5;
+
+  font-size: 13px;
+}
+
+.occasion-final-benefit strong,
+.occasion-final-benefit span {
+  display: block;
+}
+
+.occasion-final-benefit strong {
+  color: #ffffff;
+
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.occasion-final-benefit div > span {
+  margin-top: 2px;
+
+  color: rgba(255, 255, 255, 0.58);
+
+  font-size: 6.5px;
+}
+
+.occasion-benefit-divider {
+  width: 1px;
+  height: 30px;
+
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* ==================================================
+   CTA BENEFITS ENDED
+================================================== */
+
+/* ==================================================
+   CELEBRATION CTA RESPONSIVE
+================================================== */
+
+@media (max-width: 700px) {
+  .occasion-final-cta {
+    padding: 52px 0;
+  }
+
+  .occasion-final-actions {
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+  .occasion-final-btn {
+    width: 100%;
+  }
+
+  .occasion-final-benefits {
+    gap: 20px;
+
+    flex-direction: column;
+  }
+
+  .occasion-benefit-divider {
+    width: 80px;
+    height: 1px;
+  }
+
+  .occasion-final-benefit {
+    width: 100%;
+  }
+}
+
+/* ==================================================
+   CELEBRATION CTA SECTION ENDED
+================================================== */
+
+/* ==================================================
+   OCCASIONS PAGE ENDED
+================================================== */

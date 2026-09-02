@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Complete your SweetCrumb Cakes order with delivery details and payment preference."
+    />
+
+    <title>Checkout | SweetCrumb Cakes</title>
+
+    <!-- ==================================================
+         FONTS STARTED
+    ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ==================================================
+         FONTS ENDED
+    ================================================== -->
+
+    <!-- ==================================================
+         GLOBAL CSS STARTED
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/components/buttons.css" />
+    <link rel="stylesheet" href="assets/css/components/cards.css" />
+    <!-- ==================================================
+         GLOBAL CSS ENDED
+    ================================================== -->
+
+    <!-- ==================================================
+         CHECKOUT PAGE CSS STARTED
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/pages/checkout.css" />
+    <!-- ==================================================
+         CHECKOUT PAGE CSS ENDED
+    ================================================== -->
+  </head>
+
+  <body>
+    <!-- ==================================================
+         ANNOUNCEMENT BAR STARTED
+    ================================================== -->
+    <div class="announcement-bar">
+      <div class="container announcement-bar-container">
+        <p>🎉 Free Delivery on Orders Above ₹999 | Freshly Baked with Love ♥</p>
+      </div>
+    </div>
+    <!-- ==================================================
+         ANNOUNCEMENT BAR ENDED
+    ================================================== -->
+
+    <!-- ==================================================
+         HEADER / NAVBAR STARTED
+    ================================================== -->
+    <header class="site-header" data-header>
+      <div class="container header-container">
+        <a
+          href="index.html"
+          class="brand-logo"
+          aria-label="SweetCrumb Cakes home"
+        >
+          <span class="brand-logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M19 28h26l-3 24H22l-3-24Z"></path>
+
+              <path
+                d="M18 27c-3-2-4-6-2-9 2-4 7-5 10-3 1-5 5-8 10-8s9 3 10 8c4-1 8 1 9 5 1 3-1 6-4 8"
+              ></path>
+
+              <path d="M27 35v10M37 35v10"></path>
+            </svg>
+          </span>
+
+          <span class="brand-logo-text">
+            <strong>SweetCrumb</strong>
+            <small>Cakes</small>
+          </span>
+        </a>
+
+        <nav class="navbar" aria-label="Primary navigation" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html#about" class="navbar-link">About Us</a>
+            </li>
+
+            <li class="navbar-dropdown">
+              <button
+                class="navbar-link dropdown-trigger"
+                type="button"
+                aria-expanded="false"
+                data-dropdown-trigger
+              >
+                Cakes
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m7 9 5 5 5-5"></path>
+                </svg>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html#cakes">Cake Collection</a>
+                </li>
+
+                <li>
+                  <a href="index.html#best-sellers">Best Sellers</a>
+                </li>
+
+                <li>
+                  <a href="cakes.html">All Cakes</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="index.html#why-sweetcrumb" class="navbar-link">
+                Why Choose
+              </a>
+            </li>
+
+            <li>
+              <a href="custom-cakes.html" class="navbar-link"> Custom Cakes </a>
+            </li>
+
+            <li class="navbar-dropdown">
+              <button
+                class="navbar-link dropdown-trigger"
+                type="button"
+                aria-expanded="false"
+                data-dropdown-trigger
+              >
+                Occasions
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m7 9 5 5 5-5"></path>
+                </svg>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="occasions.html#birthday">Birthday Cakes</a>
+                </li>
+
+                <li>
+                  <a href="occasions.html#anniversary">Anniversary Cakes</a>
+                </li>
+
+                <li>
+                  <a href="occasions.html#wedding">Wedding Cakes</a>
+                </li>
+
+                <li>
+                  <a href="occasions.html">All Occasions</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="blog.html" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="navbar-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="header-action-btn"
+            type="button"
+            aria-label="Search cakes"
+            data-search-open
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m20 20-4-4"></path>
+            </svg>
+          </button>
+
+          <a href="#" class="header-action-btn" aria-label="My account">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 21c1-5 4-7 8-7s7 2 8 7"></path>
+            </svg>
+          </a>
+
+          <a
+            href="cart.html"
+            class="header-action-btn cart-button"
+            aria-label="Shopping cart"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 4h2l2.2 10h9.8l2-7H6"></path>
+              <circle cx="9" cy="19" r="1.5"></circle>
+              <circle cx="17" cy="19" r="1.5"></circle>
+            </svg>
+
+            <span class="cart-count" data-cart-count aria-hidden="true">0</span>
+          </a>
+
+          <button
+            class="mobile-menu-btn"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            data-menu-toggle
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- ==================================================
+         HEADER / NAVBAR ENDED
+    ================================================== -->
+
+    <main>
+      <!-- ==================================================
+           CHECKOUT SECTION STARTED
+      ================================================== -->
+      <section class="checkout-section">
+        <div class="container checkout-container">
+          <!-- CHECKOUT HEADING STARTED -->
+          <div class="checkout-heading">
+            <nav class="checkout-breadcrumb" aria-label="Breadcrumb">
+              <a href="index.html">Home</a>
+              <span>/</span>
+              <a href="cart.html">Cart</a>
+              <span>/</span>
+              <span>Checkout</span>
+            </nav>
+
+            <span class="checkout-eyebrow"> ✦ COMPLETE YOUR ORDER </span>
+
+            <h1>
+              Almost There,
+              <span>Complete Your Sweet Order</span>
+            </h1>
+
+            <p>
+              Enter your delivery details, choose your preferred payment method
+              and review your order before placing it.
+            </p>
+          </div>
+          <!-- CHECKOUT HEADING ENDED -->
+
+          <div class="checkout-layout">
+            <!-- ==================================================
+                 CHECKOUT FORM STARTED
+            ================================================== -->
+            <div class="checkout-form-area">
+              <form class="checkout-form" data-checkout-form>
+                <!-- CONTACT INFORMATION STARTED -->
+                <section class="checkout-card">
+                  <div class="checkout-card-heading">
+                    <span>01</span>
+
+                    <div>
+                      <strong>Contact Information</strong>
+
+                      <small>
+                        We’ll use these details for order updates.
+                      </small>
+                    </div>
+                  </div>
+
+                  <div class="checkout-form-grid">
+                    <label>
+                      <span>Full Name</span>
+
+                      <input
+                        type="text"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required
+                      />
+                    </label>
+
+                    <label>
+                      <span>Mobile Number</span>
+
+                      <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Enter 10-digit mobile number"
+                        maxlength="10"
+                        required
+                      />
+                    </label>
+
+                    <label class="checkout-field-full">
+                      <span>Email Address</span>
+
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required
+                      />
+                    </label>
+                  </div>
+                </section>
+                <!-- CONTACT INFORMATION ENDED -->
+
+                <!-- DELIVERY ADDRESS STARTED -->
+                <section class="checkout-card">
+                  <div class="checkout-card-heading">
+                    <span>02</span>
+
+                    <div>
+                      <strong>Delivery Address</strong>
+
+                      <small>
+                        Tell us exactly where your cakes should arrive.
+                      </small>
+                    </div>
+                  </div>
+
+                  <div class="checkout-form-grid">
+                    <label class="checkout-field-full">
+                      <span>Address</span>
+
+                      <input
+                        type="text"
+                        name="address"
+                        placeholder="House / Flat / Street address"
+                        required
+                      />
+                    </label>
+
+                    <label>
+                      <span>City</span>
+
+                      <input
+                        type="text"
+                        name="city"
+                        placeholder="Enter city"
+                        required
+                      />
+                    </label>
+
+                    <label>
+                      <span>State</span>
+
+                      <input
+                        type="text"
+                        name="state"
+                        placeholder="Enter state"
+                        required
+                      />
+                    </label>
+
+                    <label>
+                      <span>PIN Code</span>
+
+                      <input
+                        type="text"
+                        name="pincode"
+                        placeholder="6-digit PIN code"
+                        maxlength="6"
+                        required
+                      />
+                    </label>
+
+                    <label>
+                      <span>Landmark</span>
+
+                      <input
+                        type="text"
+                        name="landmark"
+                        placeholder="Nearby landmark"
+                      />
+                    </label>
+                  </div>
+                </section>
+                <!-- DELIVERY ADDRESS ENDED -->
+
+                <!-- DELIVERY DETAILS STARTED -->
+                <section class="checkout-card">
+                  <div class="checkout-card-heading">
+                    <span>03</span>
+
+                    <div>
+                      <strong>Delivery Details</strong>
+
+                      <small>
+                        Choose when you would like your order delivered.
+                      </small>
+                    </div>
+                  </div>
+
+                  <div class="checkout-form-grid">
+                    <label>
+                      <span>Delivery Date</span>
+
+                      <input
+                        type="date"
+                        name="deliveryDate"
+                        required
+                        data-delivery-date
+                      />
+                    </label>
+
+                    <label>
+                      <span>Preferred Time</span>
+
+                      <select name="deliveryTime" required>
+                        <option value="">Select time slot</option>
+                        <option value="10am-1pm">10:00 AM – 1:00 PM</option>
+                        <option value="1pm-4pm">1:00 PM – 4:00 PM</option>
+                        <option value="4pm-7pm">4:00 PM – 7:00 PM</option>
+                        <option value="7pm-9pm">7:00 PM – 9:00 PM</option>
+                      </select>
+                    </label>
+
+                    <label class="checkout-field-full">
+                      <span>Special Instructions</span>
+
+                      <textarea
+                        name="instructions"
+                        rows="4"
+                        placeholder="Cake message, delivery notes or special instructions"
+                      ></textarea>
+                    </label>
+                  </div>
+                </section>
+                <!-- DELIVERY DETAILS ENDED -->
+
+                <!-- PAYMENT METHOD STARTED -->
+                <section class="checkout-card">
+                  <div class="checkout-card-heading">
+                    <span>04</span>
+
+                    <div>
+                      <strong>Payment Method</strong>
+
+                      <small> Choose your preferred payment option. </small>
+                    </div>
+                  </div>
+
+                  <div class="checkout-payment-options">
+                    <label class="checkout-payment-option active">
+                      <input type="radio" name="payment" value="cod" checked />
+
+                      <span>
+                        <strong>Cash on Delivery</strong>
+                        <small>Pay when your order arrives</small>
+                      </span>
+                    </label>
+
+                    <label class="checkout-payment-option">
+                      <input type="radio" name="payment" value="upi" />
+
+                      <span>
+                        <strong>UPI</strong>
+                        <small>Pay securely using UPI</small>
+                      </span>
+                    </label>
+
+                    <label class="checkout-payment-option">
+                      <input type="radio" name="payment" value="card" />
+
+                      <span>
+                        <strong>Card</strong>
+                        <small>Credit or debit card</small>
+                      </span>
+                    </label>
+                  </div>
+                </section>
+                <!-- PAYMENT METHOD ENDED -->
+              </form>
+            </div>
+            <!-- ==================================================
+                 CHECKOUT FORM ENDED
+            ================================================== -->
+
+            <!-- ==================================================
+                 ORDER SUMMARY STARTED
+            ================================================== -->
+            <aside class="checkout-summary">
+              <span class="checkout-summary-eyebrow"> ORDER SUMMARY </span>
+
+              <h2>Your Cakes</h2>
+
+              <div class="checkout-summary-items" data-checkout-items></div>
+
+              <div class="checkout-summary-divider"></div>
+
+              <div class="checkout-summary-row">
+                <span>Subtotal</span>
+
+                <strong data-checkout-subtotal>₹0</strong>
+              </div>
+
+              <div class="checkout-summary-row">
+                <span>Delivery</span>
+
+                <strong data-checkout-delivery>₹0</strong>
+              </div>
+
+              <div class="checkout-summary-divider"></div>
+
+              <div class="checkout-summary-total">
+                <div>
+                  <span>Total Payable</span>
+                  <small>Inclusive of all taxes</small>
+                </div>
+
+                <strong data-checkout-total>₹0</strong>
+              </div>
+
+              <button
+                class="checkout-place-order-btn"
+                type="button"
+                data-place-order
+              >
+                Place Order
+
+                <span>→</span>
+              </button>
+
+              <a href="cart.html" class="checkout-back-link">
+                ← Back to Cart
+              </a>
+
+              <div class="checkout-secure-note">
+                <span>✓</span>
+
+                <div>
+                  <strong>Secure Checkout</strong>
+
+                  <small>
+                    Your information is used only to process your order.
+                  </small>
+                </div>
+              </div>
+            </aside>
+            <!-- ==================================================
+                 ORDER SUMMARY ENDED
+            ================================================== -->
+          </div>
+        </div>
+      </section>
+      <!-- ==================================================
+           CHECKOUT SECTION ENDED
+      ================================================== -->
+
+      <!-- ==================================================
+           ORDER MESSAGE STARTED
+      ================================================== -->
+      <div
+        class="checkout-toast"
+        data-checkout-toast
+        role="status"
+        aria-live="polite"
+      >
+        <span>✓</span>
+
+        <div>
+          <strong>Order Ready</strong>
+
+          <small data-checkout-toast-message>
+            Please review your details.
+          </small>
+        </div>
+      </div>
+      <!-- ==================================================
+           ORDER MESSAGE ENDED
+      ================================================== -->
+    </main>
+
+    <!-- ==================================================
+         MAIN JAVASCRIPT STARTED
+    ================================================== -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages/checkout.js"></script>
+    <!-- ==================================================
+         MAIN JAVASCRIPT ENDED
+    ================================================== -->
+  </body>
+</html>

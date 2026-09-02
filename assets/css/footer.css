@@ -1,0 +1,608 @@
+/* ==================================================
+   FOOTER STARTED
+================================================== */
+
+.site-footer {
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 12% 15%,
+      rgba(255, 139, 158, 0.12),
+      transparent 25%
+    ),
+    linear-gradient(120deg, #42190d 0%, #522014 52%, #612619 100%);
+
+  color: #ffffff;
+}
+
+/* ==================================================
+   FOOTER MAIN STARTED
+================================================== */
+
+.footer-main {
+  padding: 40px 0 26px;
+}
+
+/* ==================================================
+   FOOTER CONTAINER STARTED
+================================================== */
+
+.footer-container {
+  display: grid;
+
+  grid-template-columns:
+    minmax(240px, 1.35fr)
+    repeat(3, minmax(120px, 0.72fr))
+    minmax(220px, 1.05fr);
+
+  align-items: start;
+
+  gap: 32px;
+}
+
+/* ==================================================
+   FOOTER BRAND STARTED
+================================================== */
+
+.footer-brand {
+  max-width: 290px;
+}
+
+.footer-logo {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+/* ==================================================
+   FOOTER LOGO ICON STARTED
+================================================== */
+
+.footer-logo-icon {
+  display: grid;
+
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  color: #ff8ca0;
+}
+
+.footer-logo-icon svg {
+  display: block;
+
+  width: 24px;
+  height: 24px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.7;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ==================================================
+   FOOTER LOGO TEXT STARTED
+================================================== */
+
+.footer-logo-text {
+  display: grid;
+
+  gap: 1px;
+}
+
+.footer-logo-text strong {
+  color: #ffffff;
+
+  font-family: var(--font-body, "Poppins", sans-serif);
+
+  font-size: 20px;
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+.footer-logo-text small {
+  color: #ff9caf;
+
+  font-family: var(--font-body, "Poppins", sans-serif);
+
+  font-size: 7px;
+  font-weight: 700;
+
+  letter-spacing: 2.2px;
+}
+
+/* ==================================================
+   FOOTER BRAND DESCRIPTION STARTED
+================================================== */
+
+.footer-brand-description {
+  margin: 18px 0 0;
+
+  color: rgba(255, 255, 255, 0.67);
+
+  font-family: var(--font-body, "Poppins", sans-serif);
+
+  font-size: 8px;
+
+  line-height: 1.75;
+}
+
+/* ==================================================
+   FOOTER SOCIALS STARTED
+================================================== */
+
+.footer-socials {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 20px;
+}
+
+.footer-socials a {
+  display: grid;
+
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  color: #ffffff;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.footer-socials a:hover {
+  transform: translateY(-2px);
+
+  border-color: #ff8298;
+
+  background: #ff607b;
+
+  color: #ffffff;
+}
+
+.footer-socials svg {
+  display: block;
+
+  width: 15px;
+  height: 15px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.7;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ==================================================
+   FOOTER BRAND ENDED
+================================================== */
+
+/* ==================================================
+   FOOTER COLUMNS STARTED
+================================================== */
+
+.footer-column {
+  min-width: 0;
+}
+
+.footer-column h3 {
+  position: relative;
+
+  margin: 3px 0 18px;
+
+  padding-bottom: 10px;
+
+  color: #ffffff;
+
+  font-family: var(--font-heading, "Playfair Display", serif);
+
+  font-size: 16px;
+  font-weight: 600;
+
+  line-height: 1.1;
+}
+
+.footer-column h3::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 24px;
+  height: 2px;
+
+  border-radius: 10px;
+
+  background: #ff6f88;
+}
+
+/* ==================================================
+   FOOTER LINKS STARTED
+================================================== */
+
+.footer-links {
+  display: grid;
+
+  gap: 10px;
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-links li {
+  margin: 0;
+
+  padding: 0;
+}
+
+.footer-links a {
+  display: inline-flex;
+
+  color: rgba(255, 255, 255, 0.67);
+
+  font-family: var(--font-body, "Poppins", sans-serif);
+
+  font-size: 7.5px;
+  font-weight: 400;
+
+  line-height: 1.5;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: #ff9caf;
+
+  transform: translateX(3px);
+}
+
+/* ==================================================
+   FOOTER LINKS ENDED
+================================================== */
+
+/* ==================================================
+   FOOTER CONTACT STARTED
+================================================== */
+
+.footer-contact {
+  min-width: 0;
+}
+
+.footer-contact-list {
+  display: grid;
+
+  gap: 12px;
+}
+
+.footer-contact-item {
+  display: flex;
+
+  min-width: 0;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: inherit;
+
+  text-decoration: none;
+}
+
+/* ==================================================
+   FOOTER CONTACT ICON STARTED
+================================================== */
+
+.footer-contact-icon {
+  display: grid;
+
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 9px;
+
+  background: rgba(255, 255, 255, 0.07);
+
+  color: #ff91a5;
+}
+
+.footer-contact-icon svg {
+  display: block;
+
+  width: 15px;
+  height: 15px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.7;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ==================================================
+   FOOTER CONTACT TEXT STARTED
+================================================== */
+
+.footer-contact-item > span:last-child {
+  min-width: 0;
+}
+
+.footer-contact-item small,
+.footer-contact-item strong {
+  display: block;
+}
+
+.footer-contact-item small {
+  margin-bottom: 2px;
+
+  color: rgba(255, 255, 255, 0.46);
+
+  font-family: var(--font-body, "Poppins", sans-serif);
+
+  font-size: 6px;
+  font-weight: 500;
+}
+
+.footer-contact-item strong {
+  color: rgba(255, 255, 255, 0.83);
+
+  font-family: var(--font-body, "Poppins", sans-serif);
+
+  font-size: 7px;
+  font-weight: 500;
+
+  line-height: 1.45;
+
+  overflow-wrap: anywhere;
+}
+
+a.footer-contact-item:hover strong {
+  color: #ff9caf;
+}
+
+/* ==================================================
+   FOOTER CONTACT ENDED
+================================================== */
+
+/* ==================================================
+   FOOTER MAIN ENDED
+================================================== */
+
+/* ==================================================
+   FOOTER BOTTOM STARTED
+================================================== */
+
+.footer-bottom {
+  margin: 0;
+
+  padding: 13px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  background: rgba(36, 12, 7, 0.2);
+}
+
+.footer-bottom-container {
+  display: grid;
+
+  grid-template-columns:
+    auto
+    minmax(0, 1fr)
+    auto;
+
+  align-items: center;
+
+  gap: 22px;
+
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer-bottom-container p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  font-family: var(--font-body, "Poppins", sans-serif);
+
+  font-size: 6.5px;
+}
+
+/* ==================================================
+   FOOTER BOTTOM LINKS STARTED
+================================================== */
+
+.footer-bottom-links {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+}
+
+.footer-bottom-links a {
+  color: rgba(255, 255, 255, 0.5);
+
+  font-family: var(--font-body, "Poppins", sans-serif);
+
+  font-size: 6.5px;
+
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #ff9caf;
+}
+
+/* ==================================================
+   FOOTER MADE WITH STARTED
+================================================== */
+
+.footer-made-with {
+  color: rgba(255, 255, 255, 0.5);
+
+  font-family: var(--font-body, "Poppins", sans-serif);
+
+  font-size: 6.5px;
+
+  white-space: nowrap;
+}
+
+.footer-made-with > span {
+  color: #ff6680;
+}
+
+/* ==================================================
+   FOOTER BOTTOM ENDED
+================================================== */
+
+/* ==================================================
+   FOOTER TABLET STARTED
+================================================== */
+
+@media (max-width: 1100px) {
+  .footer-container {
+    grid-template-columns:
+      minmax(220px, 1.2fr)
+      repeat(2, minmax(130px, 0.8fr));
+
+    gap: 34px 24px;
+  }
+
+  .footer-contact {
+    grid-column: span 2;
+  }
+}
+
+/* ==================================================
+   FOOTER TABLET ENDED
+================================================== */
+
+/* ==================================================
+   FOOTER MOBILE STARTED
+================================================== */
+
+@media (max-width: 700px) {
+  .footer-main {
+    padding: 42px 0 28px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 32px 22px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+
+    max-width: 100%;
+  }
+
+  .footer-contact {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom-container {
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+
+    gap: 10px;
+
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    flex-wrap: wrap;
+
+    gap: 8px 14px;
+  }
+}
+
+/* ==================================================
+   SMALL MOBILE STARTED
+================================================== */
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
+
+  .footer-brand,
+  .footer-contact {
+    grid-column: auto;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 13px;
+  }
+}
+
+/* ==================================================
+   SMALL MOBILE ENDED
+================================================== */
+
+/* ==================================================
+   FOOTER ENDED
+================================================== */

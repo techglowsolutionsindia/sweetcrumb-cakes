@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Review your selected SweetCrumb Cakes products before checkout."
+    />
+
+    <title>Shopping Cart | SweetCrumb Cakes</title>
+
+    <!-- ==================================================
+         FONTS STARTED
+    ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ==================================================
+         FONTS ENDED
+    ================================================== -->
+
+    <!-- ==================================================
+         GLOBAL CSS STARTED
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/components/buttons.css" />
+    <link rel="stylesheet" href="assets/css/components/cards.css" />
+    <!-- ==================================================
+         GLOBAL CSS ENDED
+    ================================================== -->
+
+    <!-- ==================================================
+         CART PAGE CSS STARTED
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/pages/cart.css" />
+    <!-- ==================================================
+         CART PAGE CSS ENDED
+    ================================================== -->
+  </head>
+
+  <body>
+    <!-- ==================================================
+         ANNOUNCEMENT BAR STARTED
+    ================================================== -->
+    <div class="announcement-bar">
+      <div class="container announcement-bar-container">
+        <p>🎉 Free Delivery on Orders Above ₹999 | Freshly Baked with Love ♥</p>
+      </div>
+    </div>
+    <!-- ==================================================
+         ANNOUNCEMENT BAR ENDED
+    ================================================== -->
+
+    <!-- ==================================================
+         HEADER / NAVBAR STARTED
+    ================================================== -->
+    <header class="site-header" data-header>
+      <div class="container header-container">
+        <!-- SWEETCRUMB LOGO STARTED -->
+        <a
+          href="index.html"
+          class="brand-logo"
+          aria-label="SweetCrumb Cakes home"
+        >
+          <span class="brand-logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M19 28h26l-3 24H22l-3-24Z"></path>
+
+              <path
+                d="M18 27c-3-2-4-6-2-9 2-4 7-5 10-3 1-5 5-8 10-8s9 3 10 8c4-1 8 1 9 5 1 3-1 6-4 8"
+              ></path>
+
+              <path d="M27 35v10M37 35v10"></path>
+            </svg>
+          </span>
+
+          <span class="brand-logo-text">
+            <strong>SweetCrumb</strong>
+            <small>Cakes</small>
+          </span>
+        </a>
+        <!-- SWEETCRUMB LOGO ENDED -->
+
+        <!-- DESKTOP NAVIGATION STARTED -->
+        <nav class="navbar" aria-label="Primary navigation" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html#about" class="navbar-link">About Us</a>
+            </li>
+
+            <li class="navbar-dropdown">
+              <button
+                class="navbar-link dropdown-trigger"
+                type="button"
+                aria-expanded="false"
+                data-dropdown-trigger
+              >
+                Cakes
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m7 9 5 5 5-5"></path>
+                </svg>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html#cakes">Cake Collection</a>
+                </li>
+
+                <li>
+                  <a href="index.html#best-sellers">Best Sellers</a>
+                </li>
+
+                <li>
+                  <a href="cakes.html">All Cakes</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="index.html#why-sweetcrumb" class="navbar-link">
+                Why Choose
+              </a>
+            </li>
+
+            <li>
+              <a href="custom-cakes.html" class="navbar-link"> Custom Cakes </a>
+            </li>
+
+            <li class="navbar-dropdown">
+              <button
+                class="navbar-link dropdown-trigger"
+                type="button"
+                aria-expanded="false"
+                data-dropdown-trigger
+              >
+                Occasions
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m7 9 5 5 5-5"></path>
+                </svg>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="occasions.html#birthday">Birthday Cakes</a>
+                </li>
+
+                <li>
+                  <a href="occasions.html#anniversary">Anniversary Cakes</a>
+                </li>
+
+                <li>
+                  <a href="occasions.html#wedding">Wedding Cakes</a>
+                </li>
+
+                <li>
+                  <a href="occasions.html">All Occasions</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="blog.html" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="navbar-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- DESKTOP NAVIGATION ENDED -->
+
+        <!-- NAVBAR ACTIONS STARTED -->
+        <div class="header-actions">
+          <button
+            class="header-action-btn"
+            type="button"
+            aria-label="Search cakes"
+            data-search-open
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m20 20-4-4"></path>
+            </svg>
+          </button>
+
+          <a href="#" class="header-action-btn" aria-label="My account">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 21c1-5 4-7 8-7s7 2 8 7"></path>
+            </svg>
+          </a>
+
+          <a
+            href="cart.html"
+            class="header-action-btn cart-button"
+            aria-label="Shopping cart"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 4h2l2.2 10h9.8l2-7H6"></path>
+              <circle cx="9" cy="19" r="1.5"></circle>
+              <circle cx="17" cy="19" r="1.5"></circle>
+            </svg>
+
+            <span class="cart-count" data-cart-count aria-hidden="true">0</span>
+          </a>
+
+          <button
+            class="mobile-menu-btn"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            data-menu-toggle
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <!-- NAVBAR ACTIONS ENDED -->
+      </div>
+    </header>
+    <!-- ==================================================
+         HEADER / NAVBAR ENDED
+    ================================================== -->
+
+    <main>
+      <!-- ==================================================
+           CART SECTION STARTED
+      ================================================== -->
+      <section class="cart-section">
+        <div class="container cart-container">
+          <!-- CART HEADING STARTED -->
+          <div class="cart-heading">
+            <nav class="cart-breadcrumb" aria-label="Breadcrumb">
+              <a href="index.html">Home</a>
+              <span>/</span>
+              <span>Shopping Cart</span>
+            </nav>
+
+            <span class="cart-eyebrow">✦ YOUR SWEETCRUMB SELECTION</span>
+
+            <h1>
+              Your Cake Cart,
+              <span>Almost Ready to Delight</span>
+            </h1>
+
+            <p>
+              Review your freshly selected cakes, update quantities and prepare
+              your order for checkout.
+            </p>
+          </div>
+          <!-- CART HEADING ENDED -->
+
+          <!-- CART CONTENT STARTED -->
+          <div class="cart-layout" data-cart-layout>
+            <!-- CART ITEMS STARTED -->
+            <div class="cart-items-area">
+              <div class="cart-items-header">
+                <div>
+                  <strong>Your Items</strong>
+
+                  <span>
+                    <span data-cart-item-count>0</span>
+                    items in your cart
+                  </span>
+                </div>
+
+                <button type="button" class="cart-clear-btn" data-clear-cart>
+                  Clear Cart
+                </button>
+              </div>
+
+              <div class="cart-items" data-cart-items></div>
+            </div>
+            <!-- CART ITEMS ENDED -->
+
+            <!-- ORDER SUMMARY STARTED -->
+            <aside class="cart-summary">
+              <span class="cart-summary-eyebrow">ORDER SUMMARY</span>
+
+              <h2>Your Order</h2>
+
+              <div class="cart-summary-row">
+                <span>Subtotal</span>
+
+                <strong data-cart-subtotal>₹0</strong>
+              </div>
+
+              <div class="cart-summary-row">
+                <span>Delivery</span>
+
+                <strong data-cart-delivery>₹0</strong>
+              </div>
+
+              <div class="cart-free-delivery" data-delivery-message>
+                Add cakes to begin your order.
+              </div>
+
+              <div class="cart-summary-divider"></div>
+
+              <div class="cart-summary-total">
+                <div>
+                  <span>Total</span>
+
+                  <small>Inclusive of all taxes</small>
+                </div>
+
+                <strong data-cart-total>₹0</strong>
+              </div>
+
+              <button class="cart-checkout-btn" type="button" data-checkout>
+                Proceed to Checkout
+
+                <span>→</span>
+              </button>
+
+              <a href="cakes.html" class="cart-continue-link">
+                ← Continue Shopping
+              </a>
+
+              <div class="cart-secure-note">
+                <span>✓</span>
+
+                <div>
+                  <strong>Safe & Secure Ordering</strong>
+
+                  <small> Your order details are handled securely. </small>
+                </div>
+              </div>
+            </aside>
+            <!-- ORDER SUMMARY ENDED -->
+          </div>
+          <!-- CART CONTENT ENDED -->
+
+          <!-- EMPTY CART STARTED -->
+          <div class="cart-empty" data-empty-cart hidden>
+            <div class="cart-empty-icon">🧁</div>
+
+            <span>YOUR CART IS WAITING</span>
+
+            <h2>
+              No Cakes Yet,
+              <strong>Let’s Add Something Sweet</strong>
+            </h2>
+
+            <p>
+              Explore our freshly baked collection and choose a cake for your
+              next special moment.
+            </p>
+
+            <a href="cakes.html">Explore All Cakes</a>
+          </div>
+          <!-- EMPTY CART ENDED -->
+        </div>
+      </section>
+      <!-- ==================================================
+           CART SECTION ENDED
+      ================================================== -->
+
+      <!-- ==================================================
+           CART BENEFITS STARTED
+      ================================================== -->
+      <section class="cart-benefits-section">
+        <div class="container cart-benefits">
+          <article>
+            <span>♨</span>
+
+            <div>
+              <strong>Freshly Baked</strong>
+              <small>Prepared fresh after ordering</small>
+            </div>
+          </article>
+
+          <article>
+            <span>◇</span>
+
+            <div>
+              <strong>Premium Ingredients</strong>
+              <small>Quality ingredients in every cake</small>
+            </div>
+          </article>
+
+          <article>
+            <span>⌁</span>
+
+            <div>
+              <strong>Safe Delivery</strong>
+              <small>Carefully packed and delivered</small>
+            </div>
+          </article>
+
+          <article>
+            <span>♡</span>
+
+            <div>
+              <strong>Baked with Love</strong>
+              <small>Made for your special moments</small>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- ==================================================
+           CART BENEFITS ENDED
+      ================================================== -->
+
+      <!-- ==================================================
+           CART MESSAGE STARTED
+      ================================================== -->
+      <div class="cart-toast" data-cart-toast role="status" aria-live="polite">
+        <span>✓</span>
+
+        <div>
+          <strong>Cart Updated</strong>
+
+          <small data-cart-toast-message> Your cart has been updated. </small>
+        </div>
+      </div>
+      <!-- ==================================================
+           CART MESSAGE ENDED
+      ================================================== -->
+    </main>
+
+    <!-- ==================================================
+         MAIN JAVASCRIPT STARTED
+    ================================================== -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages/cart.js"></script>
+    <!-- ==================================================
+         MAIN JAVASCRIPT ENDED
+    ================================================== -->
+  </body>
+</html>

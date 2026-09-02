@@ -1,0 +1,972 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Explore SweetCrumb Cakes' complete cake collection including birthday cakes, anniversary cakes, chocolate cakes, designer cakes, photo cakes and cupcakes."
+    />
+
+    <title>All Cakes | SweetCrumb Cakes</title>
+
+    <!-- ==================================================
+         FONTS STARTED
+    ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ==================================================
+         FONTS ENDED
+    ================================================== -->
+
+    <!-- ==================================================
+         GLOBAL CSS STARTED
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+
+    <link rel="stylesheet" href="assets/css/base.css" />
+
+    <link rel="stylesheet" href="assets/css/layout.css" />
+
+    <link rel="stylesheet" href="assets/css/header.css" />
+
+    <link rel="stylesheet" href="assets/css/footer.css" />
+
+    <link rel="stylesheet" href="assets/css/components/buttons.css" />
+
+    <link rel="stylesheet" href="assets/css/components/cards.css" />
+    <!-- ==================================================
+         GLOBAL CSS ENDED
+    ================================================== -->
+
+    <!-- ==================================================
+         CAKES PAGE CSS STARTED
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/pages/cakes.css" />
+    <!-- ==================================================
+         CAKES PAGE CSS ENDED
+    ================================================== -->
+  </head>
+
+  <body>
+    <!-- ==================================================
+         ANNOUNCEMENT BAR STARTED
+    ================================================== -->
+    <div class="announcement-bar">
+      <div class="container announcement-bar-container">
+        <p>🎉 Free Delivery on Orders Above ₹999 | Freshly Baked with Love ♥</p>
+      </div>
+    </div>
+    <!-- ==================================================
+         ANNOUNCEMENT BAR ENDED
+    ================================================== -->
+
+    <!-- ==================================================
+     HEADER / NAVBAR STARTED
+================================================== -->
+    <header class="site-header" data-header>
+      <div class="container header-container">
+        <!-- ==================================================
+         SWEETCRUMB LOGO STARTED
+    ================================================== -->
+        <a
+          href="index.html"
+          class="brand-logo"
+          aria-label="SweetCrumb Cakes home"
+        >
+          <span class="brand-logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M19 28h26l-3 24H22l-3-24Z"></path>
+
+              <path
+                d="M18 27c-3-2-4-6-2-9 2-4 7-5 10-3 1-5 5-8 10-8s9 3 10 8c4-1 8 1 9 5 1 3-1 6-4 8"
+              ></path>
+
+              <path d="M27 35v10M37 35v10"></path>
+            </svg>
+          </span>
+
+          <span class="brand-logo-text">
+            <strong>SweetCrumb</strong>
+            <small>Cakes</small>
+          </span>
+        </a>
+        <!-- ==================================================
+         SWEETCRUMB LOGO ENDED
+    ================================================== -->
+
+        <!-- ==================================================
+         DESKTOP NAVIGATION STARTED
+    ================================================== -->
+        <nav class="navbar" aria-label="Primary navigation" data-navbar>
+          <ul class="navbar-list">
+            <!-- ABOUT US LINK STARTED -->
+            <li>
+              <a href="index.html#about" class="navbar-link"> About Us </a>
+            </li>
+            <!-- ABOUT US LINK ENDED -->
+
+            <!-- ==================================================
+             CAKES DROPDOWN STARTED
+        ================================================== -->
+            <li class="navbar-dropdown">
+              <button
+                class="navbar-link dropdown-trigger active"
+                type="button"
+                aria-expanded="false"
+                data-dropdown-trigger
+              >
+                Cakes
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m7 9 5 5 5-5"></path>
+                </svg>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html#cakes"> Cake Collection </a>
+                </li>
+
+                <li>
+                  <a href="index.html#best-sellers"> Best Sellers </a>
+                </li>
+
+                <li>
+                  <a href="cakes.html" class="active"> All Cakes </a>
+                </li>
+              </ul>
+            </li>
+            <!-- ==================================================
+             CAKES DROPDOWN ENDED
+        ================================================== -->
+
+            <!-- WHY CHOOSE LINK STARTED -->
+            <li>
+              <a href="index.html#why-sweetcrumb" class="navbar-link">
+                Why Choose
+              </a>
+            </li>
+            <!-- WHY CHOOSE LINK ENDED -->
+
+            <!-- CUSTOM CAKES LINK STARTED -->
+            <li>
+              <a href="custom-cakes.html" class="navbar-link"> Custom Cakes </a>
+            </li>
+            <!-- CUSTOM CAKES LINK ENDED -->
+
+            <!-- ==================================================
+             OCCASIONS DROPDOWN STARTED
+        ================================================== -->
+            <li class="navbar-dropdown">
+              <button
+                class="navbar-link dropdown-trigger"
+                type="button"
+                aria-expanded="false"
+                data-dropdown-trigger
+              >
+                Occasions
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m7 9 5 5 5-5"></path>
+                </svg>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="occasions.html#birthday"> Birthday Cakes </a>
+                </li>
+
+                <li>
+                  <a href="occasions.html#anniversary"> Anniversary Cakes </a>
+                </li>
+
+                <li>
+                  <a href="occasions.html#wedding"> Wedding Cakes </a>
+                </li>
+
+                <li>
+                  <a href="occasions.html#engagement"> Engagement Cakes </a>
+                </li>
+
+                <li>
+                  <a href="occasions.html#baby-shower"> Baby Shower Cakes </a>
+                </li>
+
+                <li>
+                  <a href="occasions.html#corporate"> Corporate Events </a>
+                </li>
+
+                <li>
+                  <a href="occasions.html"> All Occasions </a>
+                </li>
+              </ul>
+            </li>
+            <!-- ==================================================
+             OCCASIONS DROPDOWN ENDED
+        ================================================== -->
+
+            <!-- BLOG LINK STARTED -->
+            <li>
+              <a href="blog.html" class="navbar-link"> Blog </a>
+            </li>
+            <!-- BLOG LINK ENDED -->
+
+            <!-- CONTACT LINK STARTED -->
+            <li>
+              <a href="contact.html" class="navbar-link"> Contact Us </a>
+            </li>
+            <!-- CONTACT LINK ENDED -->
+          </ul>
+        </nav>
+        <!-- ==================================================
+         DESKTOP NAVIGATION ENDED
+    ================================================== -->
+
+        <!-- ==================================================
+         NAVBAR ACTIONS STARTED
+    ================================================== -->
+        <div class="header-actions">
+          <!-- SEARCH BUTTON STARTED -->
+          <button
+            class="header-action-btn"
+            type="button"
+            aria-label="Search cakes"
+            data-search-open
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+
+              <path d="m20 20-4-4"></path>
+            </svg>
+          </button>
+          <!-- SEARCH BUTTON ENDED -->
+
+          <!-- ACCOUNT LINK STARTED -->
+          <a href="#" class="header-action-btn" aria-label="My account">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+
+              <path d="M4 21c1-5 4-7 8-7s7 2 8 7"></path>
+            </svg>
+          </a>
+          <!-- ACCOUNT LINK ENDED -->
+
+          <!-- CART LINK STARTED -->
+          <a
+            href="cart.html"
+            class="header-action-btn cart-button"
+            aria-label="Shopping cart, 0 items"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 4h2l2.2 10h9.8l2-7H6"></path>
+
+              <circle cx="9" cy="19" r="1.5"></circle>
+
+              <circle cx="17" cy="19" r="1.5"></circle>
+            </svg>
+
+            <span class="cart-count" aria-hidden="true"> 0 </span>
+          </a>
+          <!-- CART LINK ENDED -->
+
+          <!-- MOBILE MENU BUTTON STARTED -->
+          <button
+            class="mobile-menu-btn"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            data-menu-toggle
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <!-- MOBILE MENU BUTTON ENDED -->
+        </div>
+        <!-- ==================================================
+         NAVBAR ACTIONS ENDED
+    ================================================== -->
+      </div>
+    </header>
+    <!-- ==================================================
+     HEADER / NAVBAR ENDED
+================================================== -->
+
+    <main>
+      <!-- ==================================================
+           CAKES HERO SECTION STARTED
+      ================================================== -->
+      <section class="cakes-hero" aria-labelledby="cakes-hero-title">
+        <div class="container cakes-hero-container">
+          <!-- HERO CONTENT STARTED -->
+          <div class="cakes-hero-content">
+            <nav class="cakes-breadcrumb" aria-label="Breadcrumb">
+              <a href="index.html#hero"> Home </a>
+
+              <span>/</span>
+
+              <span>Cakes</span>
+            </nav>
+
+            <span class="cakes-hero-eyebrow">
+              ✦ OUR COMPLETE CAKE COLLECTION
+            </span>
+
+            <h1 class="cakes-hero-title" id="cakes-hero-title">
+              All Cakes,
+              <span>Made for Every Moment</span>
+            </h1>
+
+            <p class="cakes-hero-description">
+              Explore our complete cake collection crafted with the finest
+              ingredients, beautiful designs and unforgettable flavours.
+            </p>
+
+            <!-- HERO BENEFITS STARTED -->
+            <div class="cakes-hero-benefits">
+              <div class="cakes-hero-benefit">
+                <div class="cakes-hero-benefit-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 14h14v6H5z"></path>
+                    <path d="M7 14V9h10v5"></path>
+                    <path d="M9 9V6"></path>
+                    <path d="M12 9V5"></path>
+                    <path d="M15 9V6"></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <strong>100% Fresh</strong>
+                  <span>Baked to order</span>
+                </div>
+              </div>
+
+              <div class="cakes-hero-benefit">
+                <div class="cakes-hero-benefit-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20 4C12 4 6 8 4 16"></path>
+                    <path d="M20 4c0 8-4 14-12 16"></path>
+                    <path d="M6 18c3-4 6-7 11-10"></path>
+                  </svg>
+                </div>
+
+                <div>
+                  <strong>Premium Ingredients</strong>
+                  <span>Pure, natural & high quality</span>
+                </div>
+              </div>
+            </div>
+            <!-- HERO BENEFITS ENDED -->
+          </div>
+          <!-- HERO CONTENT ENDED -->
+
+          <!-- HERO IMAGE STARTED -->
+          <div class="cakes-hero-image">
+            <div class="cakes-hero-image-glow"></div>
+
+            <img
+              src="assets/images/cakes/cakes-hero.webp"
+              alt="Premium chocolate cake from SweetCrumb Cakes"
+            />
+
+            <div class="cakes-hero-image-badge">
+              <span>Freshly</span>
+              <strong>Baked</strong>
+              <small>with love</small>
+            </div>
+          </div>
+          <!-- HERO IMAGE ENDED -->
+        </div>
+      </section>
+      <!-- ==================================================
+           CAKES HERO SECTION ENDED
+      ================================================== -->
+
+      <!-- ==================================================
+     ALL CAKES COLLECTION SECTION STARTED
+================================================== -->
+      <section
+        class="cakes-collection"
+        id="all-cakes"
+        aria-labelledby="cakes-collection-title"
+      >
+        <div class="container cakes-collection-container">
+          <!-- ==================================================
+         CAKE CATEGORY NAVIGATION STARTED
+    ================================================== -->
+          <div
+            class="cake-category-nav"
+            role="tablist"
+            aria-label="Cake categories"
+          >
+            <button
+              class="cake-category-btn active"
+              type="button"
+              data-cake-filter="all"
+            >
+              <span class="cake-category-icon" aria-hidden="true">♨</span>
+              <span>All Cakes</span>
+            </button>
+
+            <button
+              class="cake-category-btn"
+              type="button"
+              data-cake-filter="birthday"
+            >
+              <span class="cake-category-icon" aria-hidden="true">♔</span>
+              <span>Birthday</span>
+            </button>
+
+            <button
+              class="cake-category-btn"
+              type="button"
+              data-cake-filter="anniversary"
+            >
+              <span class="cake-category-icon" aria-hidden="true">♡</span>
+              <span>Anniversary</span>
+            </button>
+
+            <button
+              class="cake-category-btn"
+              type="button"
+              data-cake-filter="chocolate"
+            >
+              <span class="cake-category-icon" aria-hidden="true">◇</span>
+              <span>Chocolate</span>
+            </button>
+
+            <button
+              class="cake-category-btn"
+              type="button"
+              data-cake-filter="designer"
+            >
+              <span class="cake-category-icon" aria-hidden="true">♧</span>
+              <span>Designer</span>
+            </button>
+
+            <button
+              class="cake-category-btn"
+              type="button"
+              data-cake-filter="photo"
+            >
+              <span class="cake-category-icon" aria-hidden="true">▣</span>
+              <span>Photo Cakes</span>
+            </button>
+
+            <button
+              class="cake-category-btn"
+              type="button"
+              data-cake-filter="cupcakes"
+            >
+              <span class="cake-category-icon" aria-hidden="true">♨</span>
+              <span>Cupcakes</span>
+            </button>
+          </div>
+          <!-- ==================================================
+         CAKE CATEGORY NAVIGATION ENDED
+    ================================================== -->
+
+          <!-- ==================================================
+         COLLECTION TOOLBAR STARTED
+    ================================================== -->
+          <div class="cakes-collection-toolbar">
+            <p class="cakes-result-count">
+              Showing
+              <strong data-cake-result-count>8</strong>
+              cakes
+            </p>
+
+            <div class="cakes-toolbar-actions">
+              <label class="cakes-sort-label" for="cakes-sort">
+                Sort by:
+              </label>
+
+              <select class="cakes-sort-select" id="cakes-sort" data-cake-sort>
+                <option value="popular">Popularity</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Customer Rating</option>
+              </select>
+
+              <button
+                class="cakes-filter-btn"
+                type="button"
+                aria-label="Open cake filters"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 6h16"></path>
+                  <path d="M7 12h10"></path>
+                  <path d="M10 18h4"></path>
+                </svg>
+
+                Filter
+
+                <span>6</span>
+              </button>
+            </div>
+          </div>
+          <!-- ==================================================
+         COLLECTION TOOLBAR ENDED
+    ================================================== -->
+
+          <!-- ==================================================
+         PRODUCT GRID STARTED
+    ================================================== -->
+          <div class="cakes-product-grid" data-cake-grid>
+            <!-- PRODUCT 1 STARTED -->
+            <article
+              class="cake-product-card"
+              data-category="birthday chocolate"
+              data-price="749"
+              data-rating="4.8"
+            >
+              <div class="cake-product-image">
+                <span class="cake-product-badge"> Best Seller </span>
+
+                <button
+                  class="cake-wishlist-btn"
+                  type="button"
+                  aria-label="Add Belgian Chocolate Truffle to wishlist"
+                >
+                  ♡
+                </button>
+
+                <img
+                  src="assets/images/cakes/products/belgian-chocolate-truffle.webp"
+                  alt="Belgian Chocolate Truffle Cake"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="cake-product-content">
+                <h3>Belgian Chocolate Truffle</h3>
+
+                <div class="cake-product-rating">
+                  <span>★</span>
+                  4.8
+                  <small>(236)</small>
+                </div>
+
+                <strong class="cake-product-price"> ₹749 </strong>
+
+                <div class="cake-product-actions">
+                  <a
+                    href="cake-details.html?cake=belgian-chocolate-truffle"
+                    class="cake-view-btn"
+                  >
+                    View Details
+                  </a>
+
+                  <button class="cake-cart-btn" type="button">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- PRODUCT 1 ENDED -->
+
+            <!-- PRODUCT 2 STARTED -->
+            <article
+              class="cake-product-card"
+              data-category="birthday designer"
+              data-price="699"
+              data-rating="4.7"
+            >
+              <div class="cake-product-image">
+                <span class="cake-product-badge fresh"> Fresh Favourite </span>
+
+                <button
+                  class="cake-wishlist-btn"
+                  type="button"
+                  aria-label="Add Fresh Strawberry Delight to wishlist"
+                >
+                  ♡
+                </button>
+
+                <img
+                  src="assets/images/cakes/products/fresh-strawberry-delight.webp"
+                  alt="Fresh Strawberry Delight Cake"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="cake-product-content">
+                <h3>Fresh Strawberry Delight</h3>
+
+                <div class="cake-product-rating">
+                  <span>★</span>
+                  4.7
+                  <small>(182)</small>
+                </div>
+
+                <strong class="cake-product-price"> ₹699 </strong>
+
+                <div class="cake-product-actions">
+                  <a
+                    href="cake-details.html?cake=fresh-strawberry-delight"
+                    class="cake-view-btn"
+                  >
+                    View Details
+                  </a>
+
+                  <button class="cake-cart-btn" type="button">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- PRODUCT 2 ENDED -->
+
+            <!-- PRODUCT 3 STARTED -->
+            <article
+              class="cake-product-card"
+              data-category="birthday anniversary"
+              data-price="799"
+              data-rating="4.8"
+            >
+              <div class="cake-product-image">
+                <span class="cake-product-badge popular"> Popular </span>
+
+                <button
+                  class="cake-wishlist-btn"
+                  type="button"
+                  aria-label="Add Red Velvet Celebration to wishlist"
+                >
+                  ♡
+                </button>
+
+                <img
+                  src="assets/images/cakes/products/red-velvet-celebration.webp"
+                  alt="Red Velvet Celebration Cake"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="cake-product-content">
+                <h3>Red Velvet Celebration</h3>
+
+                <div class="cake-product-rating">
+                  <span>★</span>
+                  4.8
+                  <small>(205)</small>
+                </div>
+
+                <strong class="cake-product-price"> ₹799 </strong>
+
+                <div class="cake-product-actions">
+                  <a
+                    href="cake-details.html?cake=red-velvet-celebration"
+                    class="cake-view-btn"
+                  >
+                    View Details
+                  </a>
+
+                  <button class="cake-cart-btn" type="button">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- PRODUCT 3 ENDED -->
+
+            <!-- PRODUCT 4 STARTED -->
+            <article
+              class="cake-product-card"
+              data-category="chocolate anniversary"
+              data-price="699"
+              data-rating="4.6"
+            >
+              <div class="cake-product-image">
+                <button
+                  class="cake-wishlist-btn"
+                  type="button"
+                  aria-label="Add Chocolate Ganache Cake to wishlist"
+                >
+                  ♡
+                </button>
+
+                <img
+                  src="assets/images/cakes/products/chocolate-ganache-cake.webp"
+                  alt="Chocolate Ganache Cake"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="cake-product-content">
+                <h3>Chocolate Ganache Cake</h3>
+
+                <div class="cake-product-rating">
+                  <span>★</span>
+                  4.6
+                  <small>(164)</small>
+                </div>
+
+                <strong class="cake-product-price"> ₹699 </strong>
+
+                <div class="cake-product-actions">
+                  <a
+                    href="cake-details.html?cake=chocolate-ganache-cake"
+                    class="cake-view-btn"
+                  >
+                    View Details
+                  </a>
+
+                  <button class="cake-cart-btn" type="button">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- PRODUCT 4 ENDED -->
+
+            <!-- PRODUCT 5 STARTED -->
+            <article
+              class="cake-product-card"
+              data-category="designer anniversary"
+              data-price="649"
+              data-rating="4.7"
+            >
+              <div class="cake-product-image">
+                <button
+                  class="cake-wishlist-btn"
+                  type="button"
+                  aria-label="Add Mango Bliss Cake to wishlist"
+                >
+                  ♡
+                </button>
+
+                <img
+                  src="assets/images/cakes/products/mango-bliss-cake.webp"
+                  alt="Mango Bliss Cake"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="cake-product-content">
+                <h3>Mango Bliss Cake</h3>
+
+                <div class="cake-product-rating">
+                  <span>★</span>
+                  4.7
+                  <small>(118)</small>
+                </div>
+
+                <strong class="cake-product-price"> ₹649 </strong>
+
+                <div class="cake-product-actions">
+                  <a
+                    href="cake-details.html?cake=mango-bliss-cake"
+                    class="cake-view-btn"
+                  >
+                    View Details
+                  </a>
+
+                  <button class="cake-cart-btn" type="button">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- PRODUCT 5 ENDED -->
+
+            <!-- PRODUCT 6 STARTED -->
+            <article
+              class="cake-product-card"
+              data-category="birthday chocolate"
+              data-price="699"
+              data-rating="4.6"
+            >
+              <div class="cake-product-image">
+                <button
+                  class="cake-wishlist-btn"
+                  type="button"
+                  aria-label="Add Black Forest Cake to wishlist"
+                >
+                  ♡
+                </button>
+
+                <img
+                  src="assets/images/cakes/products/black-forest-cake.webp"
+                  alt="Black Forest Cake"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="cake-product-content">
+                <h3>Black Forest Cake</h3>
+
+                <div class="cake-product-rating">
+                  <span>★</span>
+                  4.6
+                  <small>(187)</small>
+                </div>
+
+                <strong class="cake-product-price"> ₹699 </strong>
+
+                <div class="cake-product-actions">
+                  <a
+                    href="cake-details.html?cake=black-forest-cake"
+                    class="cake-view-btn"
+                  >
+                    View Details
+                  </a>
+
+                  <button class="cake-cart-btn" type="button">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- PRODUCT 6 ENDED -->
+
+            <!-- PRODUCT 7 STARTED -->
+            <article
+              class="cake-product-card"
+              data-category="chocolate designer"
+              data-price="899"
+              data-rating="4.8"
+            >
+              <div class="cake-product-image">
+                <button
+                  class="cake-wishlist-btn"
+                  type="button"
+                  aria-label="Add Hazelnut Crunch Cake to wishlist"
+                >
+                  ♡
+                </button>
+
+                <img
+                  src="assets/images/cakes/products/hazelnut-crunch-cake.webp"
+                  alt="Hazelnut Crunch Cake"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="cake-product-content">
+                <h3>Hazelnut Crunch Cake</h3>
+
+                <div class="cake-product-rating">
+                  <span>★</span>
+                  4.8
+                  <small>(133)</small>
+                </div>
+
+                <strong class="cake-product-price"> ₹899 </strong>
+
+                <div class="cake-product-actions">
+                  <a
+                    href="cake-details.html?cake=hazelnut-crunch-cake"
+                    class="cake-view-btn"
+                  >
+                    View Details
+                  </a>
+
+                  <button class="cake-cart-btn" type="button">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- PRODUCT 7 ENDED -->
+
+            <!-- PRODUCT 8 STARTED -->
+            <article
+              class="cake-product-card"
+              data-category="anniversary designer"
+              data-price="749"
+              data-rating="4.7"
+            >
+              <div class="cake-product-image">
+                <button
+                  class="cake-wishlist-btn"
+                  type="button"
+                  aria-label="Add Blueberry Cheesecake to wishlist"
+                >
+                  ♡
+                </button>
+
+                <img
+                  src="assets/images/cakes/products/blueberry-cheesecake.webp"
+                  alt="Blueberry Cheesecake"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="cake-product-content">
+                <h3>Blueberry Cheesecake</h3>
+
+                <div class="cake-product-rating">
+                  <span>★</span>
+                  4.7
+                  <small>(96)</small>
+                </div>
+
+                <strong class="cake-product-price"> ₹749 </strong>
+
+                <div class="cake-product-actions">
+                  <a
+                    href="cake-details.html?cake=blueberry-cheesecake"
+                    class="cake-view-btn"
+                  >
+                    View Details
+                  </a>
+
+                  <button class="cake-cart-btn" type="button">
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- PRODUCT 8 ENDED -->
+          </div>
+          <!-- ==================================================
+         PRODUCT GRID ENDED
+    ================================================== -->
+
+          <!-- ==================================================
+         PAGINATION STARTED
+    ================================================== -->
+          <nav class="cakes-pagination" aria-label="Cake collection pages">
+            <button type="button" aria-label="Previous page">‹</button>
+
+            <button type="button" class="active">1</button>
+
+            <button type="button">2</button>
+
+            <button type="button">3</button>
+
+            <button type="button">4</button>
+
+            <button type="button" aria-label="Next page">›</button>
+          </nav>
+          <!-- ==================================================
+         PAGINATION ENDED
+    ================================================== -->
+        </div>
+      </section>
+      <!-- ==================================================
+     ALL CAKES COLLECTION SECTION ENDED
+================================================== -->
+    </main>
+
+    <!-- ==================================================
+         MAIN JAVASCRIPT STARTED
+    ================================================== -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages/cakes.js"></script>
+    <!-- ==================================================
+         MAIN JAVASCRIPT ENDED
+    ================================================== -->
+  </body>
+</html>

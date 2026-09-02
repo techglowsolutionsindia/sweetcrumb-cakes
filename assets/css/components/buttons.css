@@ -1,0 +1,277 @@
+/* ==================================================
+   SWEETCRUMB CAKES - BUTTON COMPONENTS STARTED
+================================================== */
+
+/* ==================================================
+   BUTTON BASE
+================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+
+  min-height: 48px;
+  padding: 12px 24px;
+
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+
+  font-family: var(--font-primary);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-semibold);
+  line-height: 1;
+
+  white-space: nowrap;
+  cursor: pointer;
+
+  transition:
+    background-color var(--transition-normal),
+    color var(--transition-normal),
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* ==================================================
+   PRIMARY BUTTON
+================================================== */
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 20px rgba(240, 90, 115, 0.22);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  border-color: var(--color-primary-dark);
+  box-shadow: 0 10px 24px rgba(240, 90, 115, 0.3);
+}
+
+/* ==================================================
+   SECONDARY BUTTON
+================================================== */
+
+.btn-secondary {
+  background: var(--color-secondary);
+  color: var(--color-white);
+  border-color: var(--color-secondary);
+  box-shadow: 0 8px 20px rgba(74, 31, 15, 0.18);
+}
+
+.btn-secondary:hover {
+  background: var(--color-secondary-dark);
+  color: var(--color-white);
+  border-color: var(--color-secondary-dark);
+  box-shadow: 0 10px 24px rgba(74, 31, 15, 0.26);
+}
+
+/* ==================================================
+   OUTLINE PRIMARY BUTTON
+================================================== */
+
+.btn-outline-primary {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-outline-primary:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* ==================================================
+   OUTLINE SECONDARY BUTTON
+================================================== */
+
+.btn-outline-secondary {
+  background: transparent;
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.btn-outline-secondary:hover {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+/* ==================================================
+   LIGHT BUTTON
+================================================== */
+
+.btn-light {
+  background: var(--color-white);
+  color: var(--color-secondary);
+  border-color: var(--color-white);
+}
+
+.btn-light:hover {
+  background: var(--color-primary-light);
+  color: var(--color-primary-dark);
+  border-color: var(--color-primary-light);
+}
+
+/* ==================================================
+   TEXT BUTTON
+================================================== */
+
+.btn-text {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+
+  color: var(--color-primary);
+
+  font-size: var(--fs-14);
+  font-weight: var(--fw-semibold);
+
+  transition:
+    color var(--transition-normal),
+    gap var(--transition-normal);
+}
+
+.btn-text:hover {
+  gap: var(--space-12);
+  color: var(--color-primary-dark);
+}
+
+/* ==================================================
+   BUTTON ICON
+================================================== */
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-circle);
+
+  background: var(--color-white);
+  color: var(--color-secondary);
+
+  transition:
+    background-color var(--transition-normal),
+    color var(--transition-normal),
+    border-color var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.btn-icon:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+/* ==================================================
+   BUTTON ICON INSIDE STANDARD BUTTON
+================================================== */
+
+.btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  transition: transform var(--transition-normal);
+}
+
+.btn:hover svg {
+  transform: translateX(3px);
+}
+
+/* ==================================================
+   BUTTON SIZES
+================================================== */
+
+.btn-sm {
+  min-height: 40px;
+  padding: 9px 18px;
+  font-size: var(--fs-13);
+}
+
+.btn-lg {
+  min-height: 54px;
+  padding: 15px 30px;
+  font-size: var(--fs-15);
+}
+
+/* ==================================================
+   FULL WIDTH BUTTON
+================================================== */
+
+.btn-full {
+  width: 100%;
+}
+
+/* ==================================================
+   BUTTON GROUP
+================================================== */
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-12);
+}
+
+/* ==================================================
+   DISABLED STATE
+================================================== */
+
+.btn:disabled,
+.btn.disabled {
+  pointer-events: none;
+  opacity: 0.55;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ==================================================
+   RESPONSIVE - MOBILE
+================================================== */
+
+@media (max-width: 767px) {
+  .btn {
+    min-height: 46px;
+    padding: 11px 20px;
+  }
+
+  .btn-lg {
+    min-height: 50px;
+    padding: 13px 24px;
+  }
+}
+
+/* ==================================================
+   RESPONSIVE - SMALL MOBILE
+================================================== */
+
+@media (max-width: 479px) {
+  .btn-group {
+    width: 100%;
+  }
+
+  .btn-group .btn {
+    flex: 1 1 auto;
+  }
+}
+
+/* ==================================================
+   SWEETCRUMB CAKES - BUTTON COMPONENTS ENDED
+================================================== */

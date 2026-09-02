@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Explore premium handcrafted cakes from SweetCrumb Cakes."
+    />
+
+    <title>Cake Details | SweetCrumb Cakes</title>
+
+    <!-- ==================================================
+         FONTS STARTED
+    ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ==================================================
+         FONTS ENDED
+    ================================================== -->
+
+    <!-- ==================================================
+         GLOBAL CSS STARTED
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/components/buttons.css" />
+    <link rel="stylesheet" href="assets/css/components/cards.css" />
+    <!-- ==================================================
+         GLOBAL CSS ENDED
+    ================================================== -->
+
+    <!-- ==================================================
+         CAKE DETAILS PAGE CSS STARTED
+    ================================================== -->
+    <link rel="stylesheet" href="assets/css/pages/cake-details.css" />
+    <!-- ==================================================
+         CAKE DETAILS PAGE CSS ENDED
+    ================================================== -->
+  </head>
+
+  <body>
+    <!-- ==================================================
+         ANNOUNCEMENT BAR STARTED
+    ================================================== -->
+    <div class="announcement-bar">
+      <div class="container announcement-bar-container">
+        <p>🎉 Free Delivery on Orders Above ₹999 | Freshly Baked with Love ♥</p>
+      </div>
+    </div>
+    <!-- ==================================================
+         ANNOUNCEMENT BAR ENDED
+    ================================================== -->
+
+    <!-- ==================================================
+         HEADER / NAVBAR STARTED
+    ================================================== -->
+    <header class="site-header" data-header>
+      <div class="container header-container">
+        <!-- SWEETCRUMB LOGO STARTED -->
+        <a
+          href="index.html"
+          class="brand-logo"
+          aria-label="SweetCrumb Cakes home"
+        >
+          <span class="brand-logo-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <path d="M19 28h26l-3 24H22l-3-24Z"></path>
+
+              <path
+                d="M18 27c-3-2-4-6-2-9 2-4 7-5 10-3 1-5 5-8 10-8s9 3 10 8c4-1 8 1 9 5 1 3-1 6-4 8"
+              ></path>
+
+              <path d="M27 35v10M37 35v10"></path>
+            </svg>
+          </span>
+
+          <span class="brand-logo-text">
+            <strong>SweetCrumb</strong>
+            <small>Cakes</small>
+          </span>
+        </a>
+        <!-- SWEETCRUMB LOGO ENDED -->
+
+        <!-- DESKTOP NAVIGATION STARTED -->
+        <nav class="navbar" aria-label="Primary navigation" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html#about" class="navbar-link">About Us</a>
+            </li>
+
+            <li class="navbar-dropdown">
+              <button
+                class="navbar-link dropdown-trigger active"
+                type="button"
+                aria-expanded="false"
+                data-dropdown-trigger
+              >
+                Cakes
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m7 9 5 5 5-5"></path>
+                </svg>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html#cakes">Cake Collection</a>
+                </li>
+
+                <li>
+                  <a href="index.html#best-sellers">Best Sellers</a>
+                </li>
+
+                <li>
+                  <a href="cakes.html" class="active">All Cakes</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="index.html#why-sweetcrumb" class="navbar-link">
+                Why Choose
+              </a>
+            </li>
+
+            <li>
+              <a href="custom-cakes.html" class="navbar-link"> Custom Cakes </a>
+            </li>
+
+            <li class="navbar-dropdown">
+              <button
+                class="navbar-link dropdown-trigger"
+                type="button"
+                aria-expanded="false"
+                data-dropdown-trigger
+              >
+                Occasions
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m7 9 5 5 5-5"></path>
+                </svg>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="occasions.html#birthday">Birthday Cakes</a>
+                </li>
+
+                <li>
+                  <a href="occasions.html#anniversary">Anniversary Cakes</a>
+                </li>
+
+                <li>
+                  <a href="occasions.html#wedding">Wedding Cakes</a>
+                </li>
+
+                <li>
+                  <a href="occasions.html">All Occasions</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="blog.html" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="navbar-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- DESKTOP NAVIGATION ENDED -->
+
+        <!-- NAVBAR ACTIONS STARTED -->
+        <div class="header-actions">
+          <button
+            class="header-action-btn"
+            type="button"
+            aria-label="Search cakes"
+            data-search-open
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path d="m20 20-4-4"></path>
+            </svg>
+          </button>
+
+          <a href="#" class="header-action-btn" aria-label="My account">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 21c1-5 4-7 8-7s7 2 8 7"></path>
+            </svg>
+          </a>
+
+          <a
+            href="cart.html"
+            class="header-action-btn cart-button"
+            aria-label="Shopping cart"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 4h2l2.2 10h9.8l2-7H6"></path>
+              <circle cx="9" cy="19" r="1.5"></circle>
+              <circle cx="17" cy="19" r="1.5"></circle>
+            </svg>
+
+            <span class="cart-count" data-cart-count aria-hidden="true">0</span>
+          </a>
+
+          <button
+            class="mobile-menu-btn"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            data-menu-toggle
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <!-- NAVBAR ACTIONS ENDED -->
+      </div>
+    </header>
+    <!-- ==================================================
+         HEADER / NAVBAR ENDED
+    ================================================== -->
+
+    <main>
+      <!-- ==================================================
+           CAKE PRODUCT DETAILS SECTION STARTED
+      ================================================== -->
+      <section class="cake-details-section">
+        <div class="container cake-details-container">
+          <!-- BREADCRUMB STARTED -->
+          <nav class="cake-details-breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+
+            <a href="cakes.html">Cakes</a>
+            <span>/</span>
+
+            <span data-product-breadcrumb>Belgian Chocolate Truffle</span>
+          </nav>
+          <!-- BREADCRUMB ENDED -->
+
+          <div class="cake-details-layout">
+            <!-- ==================================================
+                 PRODUCT IMAGE AREA STARTED
+            ================================================== -->
+            <div class="cake-details-gallery">
+              <div class="cake-details-main-image">
+                <span class="cake-details-badge" data-product-badge>
+                  Best Seller
+                </span>
+
+                <button
+                  class="cake-details-wishlist"
+                  type="button"
+                  aria-label="Add cake to wishlist"
+                  data-product-wishlist
+                >
+                  ♡
+                </button>
+
+                <img
+                  src="assets/images/cakes/products/belgian-chocolate-truffle.webp"
+                  alt="Belgian Chocolate Truffle Cake"
+                  data-product-image
+                />
+              </div>
+
+              <div class="cake-image-note">
+                <span class="cake-image-note-icon">✦</span>
+
+                <div>
+                  <strong>Freshly Crafted</strong>
+                  <small>Your cake is prepared fresh after ordering.</small>
+                </div>
+              </div>
+            </div>
+            <!-- ==================================================
+                 PRODUCT IMAGE AREA ENDED
+            ================================================== -->
+
+            <!-- ==================================================
+                 PRODUCT INFORMATION STARTED
+            ================================================== -->
+            <div class="cake-details-content">
+              <span class="cake-details-eyebrow">
+                ✦ SWEETCRUMB SIGNATURE COLLECTION
+              </span>
+
+              <h1 class="cake-details-title" data-product-name>
+                Belgian Chocolate Truffle
+              </h1>
+
+              <div class="cake-details-rating-row">
+                <div class="cake-details-rating">
+                  <span>★</span>
+
+                  <strong data-product-rating>4.8</strong>
+
+                  <small>
+                    (<span data-product-reviews>236</span> reviews)
+                  </small>
+                </div>
+
+                <span class="cake-details-divider"></span>
+
+                <span class="cake-details-fresh">
+                  <span>●</span>
+                  Freshly Baked
+                </span>
+              </div>
+
+              <div class="cake-details-price-row">
+                <strong class="cake-details-price" data-product-price>
+                  ₹749
+                </strong>
+
+                <span>Inclusive of all taxes</span>
+              </div>
+
+              <p class="cake-details-description" data-product-description>
+                A decadent chocolate celebration layered with rich Belgian
+                chocolate, silky truffle cream and luxurious dark chocolate
+                ganache.
+              </p>
+
+              <!-- WEIGHT SELECTOR STARTED -->
+              <div class="cake-option-group">
+                <div class="cake-option-heading">
+                  <strong>Select Weight</strong>
+                  <span>Choose your perfect size</span>
+                </div>
+
+                <div class="cake-weight-options" data-weight-options></div>
+              </div>
+              <!-- WEIGHT SELECTOR ENDED -->
+
+              <!-- EGG PREFERENCE STARTED -->
+              <div class="cake-option-group">
+                <div class="cake-option-heading">
+                  <strong>Preference</strong>
+                  <span>Choose cake preparation</span>
+                </div>
+
+                <div class="cake-preference-options">
+                  <label class="cake-choice active">
+                    <input
+                      type="radio"
+                      name="cake-preference"
+                      value="eggless"
+                      checked
+                    />
+
+                    <span>
+                      <strong>Eggless</strong>
+                      <small>100% vegetarian</small>
+                    </span>
+                  </label>
+
+                  <label class="cake-choice">
+                    <input
+                      type="radio"
+                      name="cake-preference"
+                      value="regular"
+                    />
+
+                    <span>
+                      <strong>Regular</strong>
+                      <small>Classic recipe</small>
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <!-- EGG PREFERENCE ENDED -->
+
+              <!-- QUANTITY STARTED -->
+              <div class="cake-purchase-row">
+                <div class="cake-quantity-wrap">
+                  <span>Quantity</span>
+
+                  <div class="cake-quantity">
+                    <button
+                      type="button"
+                      aria-label="Decrease quantity"
+                      data-qty-minus
+                    >
+                      −
+                    </button>
+
+                    <strong data-product-quantity>1</strong>
+
+                    <button
+                      type="button"
+                      aria-label="Increase quantity"
+                      data-qty-plus
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+
+                <div class="cake-stock-status">
+                  <span>✓</span>
+
+                  <div>
+                    <strong>Available Today</strong>
+                    <small>Order now for fresh preparation</small>
+                  </div>
+                </div>
+              </div>
+              <!-- QUANTITY ENDED -->
+
+              <!-- PRODUCT ACTIONS STARTED -->
+              <div class="cake-details-actions">
+                <button
+                  class="cake-details-cart-btn"
+                  type="button"
+                  data-add-to-cart
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 4h2l2.2 10h9.8l2-7H6"></path>
+                    <circle cx="9" cy="19" r="1.5"></circle>
+                    <circle cx="17" cy="19" r="1.5"></circle>
+                  </svg>
+
+                  Add to Cart
+                </button>
+
+                <button class="cake-details-buy-btn" type="button" data-buy-now>
+                  Buy Now
+                </button>
+              </div>
+              <!-- PRODUCT ACTIONS ENDED -->
+
+              <!-- SERVICE BENEFITS STARTED -->
+              <div class="cake-details-benefits">
+                <div class="cake-details-benefit">
+                  <span>♨</span>
+
+                  <div>
+                    <strong>Freshly Baked</strong>
+                    <small>Prepared after ordering</small>
+                  </div>
+                </div>
+
+                <div class="cake-details-benefit">
+                  <span>◇</span>
+
+                  <div>
+                    <strong>Premium Quality</strong>
+                    <small>Carefully selected ingredients</small>
+                  </div>
+                </div>
+
+                <div class="cake-details-benefit">
+                  <span>⌁</span>
+
+                  <div>
+                    <strong>Safe Delivery</strong>
+                    <small>Carefully packed & delivered</small>
+                  </div>
+                </div>
+              </div>
+              <!-- SERVICE BENEFITS ENDED -->
+            </div>
+            <!-- ==================================================
+                 PRODUCT INFORMATION ENDED
+            ================================================== -->
+          </div>
+        </div>
+      </section>
+      <!-- ==================================================
+           CAKE PRODUCT DETAILS SECTION ENDED
+      ================================================== -->
+
+      <!-- ==================================================
+           PRODUCT INFORMATION STRIP STARTED
+      ================================================== -->
+      <section class="cake-information-section">
+        <div class="container cake-information-container">
+          <article>
+            <span>01</span>
+
+            <div>
+              <strong>Premium Ingredients</strong>
+              <p data-product-ingredients>
+                Belgian chocolate, fresh cream, cocoa and chocolate truffle.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>02</span>
+
+            <div>
+              <strong>Best Enjoyed</strong>
+              <p>
+                Serve slightly chilled and consume fresh for the best flavour
+                and texture.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>03</span>
+
+            <div>
+              <strong>Storage</strong>
+              <p>
+                Keep refrigerated and store in the original cake box until
+                serving.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>04</span>
+
+            <div>
+              <strong>Delivery Care</strong>
+              <p>
+                Delivered in protective bakery packaging to preserve freshness
+                and presentation.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- ==================================================
+           PRODUCT INFORMATION STRIP ENDED
+      ================================================== -->
+
+      <!-- ==================================================
+           ADD TO CART MESSAGE STARTED
+      ================================================== -->
+      <div class="cake-toast" data-cake-toast role="status" aria-live="polite">
+        <span>✓</span>
+
+        <div>
+          <strong>Added to cart</strong>
+          <small data-toast-product>Cake added successfully.</small>
+        </div>
+      </div>
+      <!-- ==================================================
+           ADD TO CART MESSAGE ENDED
+      ================================================== -->
+    </main>
+
+    <!-- ==================================================
+         MAIN JAVASCRIPT STARTED
+    ================================================== -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages/cake-details.js"></script>
+    <!-- ==================================================
+         MAIN JAVASCRIPT ENDED
+    ================================================== -->
+  </body>
+</html>

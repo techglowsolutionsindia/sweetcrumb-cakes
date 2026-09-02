@@ -1,0 +1,230 @@
+/* ==================================================
+   SWEETCRUMB CAKES - DESIGN SYSTEM VARIABLES STARTED
+================================================== */
+
+:root {
+  /* ==================================================
+     BRAND COLORS
+  ================================================== */
+  --color-primary: #f05a73;
+  --color-primary-dark: #d94761;
+  --color-primary-light: #fff0f3;
+
+  --color-secondary: #4a1f0f;
+  --color-secondary-dark: #321207;
+  --color-secondary-light: #6a301a;
+
+  --color-accent: #f6a623;
+  --color-accent-light: #fff5df;
+
+  /* ==================================================
+     BACKGROUND COLORS
+  ================================================== */
+  --color-white: #ffffff;
+  --color-cream: #fffaf7;
+  --color-blush: #fff4f5;
+  --color-soft-pink: #fdebed;
+  --color-light: #faf7f5;
+  --color-dark: #24120c;
+
+  /* ==================================================
+     TEXT COLORS
+  ================================================== */
+  --text-primary: #2d1710;
+  --text-secondary: #6f5a52;
+  --text-muted: #927f77;
+  --text-light: #ffffff;
+
+  /* ==================================================
+     BORDER COLORS
+  ================================================== */
+  --border-color: #eadfda;
+  --border-light: #f3e9e5;
+  --border-pink: #f5c5cd;
+
+  /* ==================================================
+     STATUS COLORS
+  ================================================== */
+  --color-success: #2e9d61;
+  --color-warning: #f6a623;
+  --color-error: #d94b4b;
+
+  /* ==================================================
+     TYPOGRAPHY
+  ================================================== */
+  --font-primary: "Poppins", sans-serif;
+  --font-heading: "Playfair Display", serif;
+  --font-script: "Dancing Script", cursive;
+
+  /* ==================================================
+     FONT SIZES
+  ================================================== */
+  --fs-12: 0.75rem;
+  --fs-13: 0.8125rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-22: 1.375rem;
+  --fs-24: 1.5rem;
+  --fs-28: 1.75rem;
+  --fs-32: 2rem;
+  --fs-36: 2.25rem;
+  --fs-40: 2.5rem;
+  --fs-48: 3rem;
+  --fs-56: 3.5rem;
+  --fs-64: 4rem;
+
+  /* ==================================================
+     FONT WEIGHTS
+  ================================================== */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* ==================================================
+     LINE HEIGHTS
+  ================================================== */
+  --lh-tight: 1.2;
+  --lh-heading: 1.3;
+  --lh-normal: 1.6;
+  --lh-relaxed: 1.8;
+
+  /* ==================================================
+     SPACING
+  ================================================== */
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-20: 1.25rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-40: 2.5rem;
+  --space-48: 3rem;
+  --space-56: 3.5rem;
+  --space-64: 4rem;
+  --space-72: 4.5rem;
+  --space-80: 5rem;
+  --space-96: 6rem;
+  --space-120: 7.5rem;
+
+  /* ==================================================
+     CONTAINER WIDTHS
+  ================================================== */
+  --container-width: 1320px;
+  --container-wide: 1440px;
+  --container-small: 960px;
+  --container-padding: 24px;
+
+  /* ==================================================
+     BORDER RADIUS
+  ================================================== */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+  --radius-circle: 50%;
+
+  /* ==================================================
+     SHADOWS
+  ================================================== */
+  --shadow-sm: 0 4px 14px rgba(74, 31, 15, 0.06);
+  --shadow-md: 0 10px 30px rgba(74, 31, 15, 0.1);
+  --shadow-lg: 0 18px 45px rgba(74, 31, 15, 0.14);
+  --shadow-card: 0 8px 24px rgba(50, 18, 7, 0.08);
+
+  /* ==================================================
+     TRANSITIONS
+  ================================================== */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* ==================================================
+     HEADER HEIGHTS
+  ================================================== */
+  --announcement-height: 34px;
+  --header-height: 84px;
+  --total-header-height: 118px;
+
+  /* ==================================================
+     SECTION SPACING
+  ================================================== */
+  --section-padding: 96px;
+  --section-padding-small: 72px;
+
+  /* ==================================================
+     Z-INDEX
+  ================================================== */
+  --z-dropdown: 100;
+  --z-sticky: 500;
+  --z-header: 1000;
+  --z-overlay: 1500;
+  --z-modal: 2000;
+}
+
+/* ==================================================
+   RESPONSIVE VARIABLE ADJUSTMENTS
+================================================== */
+
+@media (max-width: 1199px) {
+  :root {
+    --container-padding: 32px;
+    --section-padding: 88px;
+  }
+}
+
+@media (max-width: 991px) {
+  :root {
+    --header-height: 76px;
+    --total-header-height: 110px;
+
+    --section-padding: 72px;
+    --section-padding-small: 60px;
+
+    --container-padding: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --announcement-height: 32px;
+    --header-height: 68px;
+    --total-header-height: 100px;
+
+    --section-padding: 60px;
+    --section-padding-small: 48px;
+
+    --container-padding: 20px;
+
+    --fs-64: 3rem;
+    --fs-56: 2.75rem;
+    --fs-48: 2.5rem;
+    --fs-40: 2.125rem;
+    --fs-36: 2rem;
+  }
+}
+
+@media (max-width: 479px) {
+  :root {
+    --container-padding: 16px;
+
+    --section-padding: 52px;
+    --section-padding-small: 44px;
+
+    --fs-64: 2.5rem;
+    --fs-56: 2.375rem;
+    --fs-48: 2.25rem;
+    --fs-40: 2rem;
+    --fs-36: 1.875rem;
+    --fs-32: 1.75rem;
+  }
+}
+
+/* ==================================================
+   SWEETCRUMB CAKES - DESIGN SYSTEM VARIABLES ENDED
+================================================== */

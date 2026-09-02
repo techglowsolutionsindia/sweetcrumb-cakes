@@ -1,0 +1,1194 @@
+/* ==================================================
+   CAKE DETAILS PAGE STARTED
+================================================== */
+
+/* ==================================================
+   PRODUCT DETAILS SECTION STARTED
+================================================== */
+
+.cake-details-section {
+  padding: 30px 0 46px;
+
+  background:
+    radial-gradient(
+      circle at 88% 25%,
+      rgba(255, 104, 129, 0.09),
+      transparent 28%
+    ),
+    linear-gradient(120deg, #fffaf8 0%, #fff7f5 55%, #fff1f3 100%);
+}
+
+.cake-details-container {
+  position: relative;
+}
+
+/* ==================================================
+   BREADCRUMB STARTED
+================================================== */
+
+.cake-details-breadcrumb {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 24px;
+
+  color: #9b7c72;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.cake-details-breadcrumb a {
+  color: #ff5870;
+
+  transition: color 0.25s ease;
+}
+
+.cake-details-breadcrumb a:hover {
+  color: #5a2412;
+}
+
+/* ==================================================
+   BREADCRUMB ENDED
+================================================== */
+
+/* ==================================================
+   PRODUCT DETAILS LAYOUT STARTED
+================================================== */
+
+.cake-details-layout {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.96fr);
+
+  align-items: center;
+
+  gap: clamp(48px, 6vw, 92px);
+}
+
+/* ==================================================
+   PRODUCT IMAGE STARTED
+================================================== */
+
+.cake-details-gallery {
+  min-width: 0;
+}
+
+.cake-details-main-image {
+  position: relative;
+
+  display: flex;
+
+  min-height: 470px;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border: 1px solid #efdcd6;
+  border-radius: 26px;
+
+  background: radial-gradient(
+    circle at 50% 45%,
+    #ffffff 0%,
+    #fff8f5 65%,
+    #fbece8 100%
+  );
+
+  box-shadow:
+    0 24px 55px rgba(66, 25, 13, 0.08),
+    0 4px 12px rgba(66, 25, 13, 0.03);
+}
+
+.cake-details-main-image::before {
+  content: "";
+
+  position: absolute;
+
+  width: 390px;
+  height: 390px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  filter: blur(2px);
+}
+
+.cake-details-main-image img {
+  position: relative;
+
+  z-index: 1;
+
+  display: block;
+
+  width: 100%;
+  height: 470px;
+
+  object-fit: cover;
+
+  transition: transform 0.45s ease;
+}
+
+.cake-details-main-image:hover img {
+  transform: scale(1.025);
+}
+
+.cake-details-badge {
+  position: absolute;
+
+  top: 20px;
+  left: 20px;
+
+  z-index: 3;
+
+  padding: 7px 11px;
+
+  border-radius: 6px;
+
+  background: #ff5870;
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  text-transform: uppercase;
+
+  box-shadow: 0 6px 15px rgba(255, 88, 112, 0.2);
+}
+
+.cake-details-wishlist {
+  position: absolute;
+
+  top: 18px;
+  right: 18px;
+
+  z-index: 3;
+
+  display: grid;
+
+  width: 42px;
+  height: 42px;
+
+  place-items: center;
+
+  border: 1px solid #ead7d1;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  color: #70483d;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.cake-details-wishlist:hover,
+.cake-details-wishlist.active {
+  background: #ff5870;
+
+  color: #ffffff;
+
+  transform: scale(1.06);
+}
+
+/* ==================================================
+   IMAGE NOTE STARTED
+================================================== */
+
+.cake-image-note {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 14px;
+
+  padding: 13px 16px;
+
+  border: 1px solid #efdfda;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.cake-image-note-icon {
+  display: grid;
+
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #fff0f3;
+
+  color: #ff5870;
+
+  font-size: 13px;
+}
+
+.cake-image-note strong,
+.cake-image-note small {
+  display: block;
+}
+
+.cake-image-note strong {
+  margin-bottom: 2px;
+
+  color: #4a2419;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.cake-image-note small {
+  color: #92756c;
+
+  font-size: 8px;
+}
+
+/* ==================================================
+   PRODUCT IMAGE ENDED
+================================================== */
+
+/* ==================================================
+   PRODUCT CONTENT STARTED
+================================================== */
+
+.cake-details-content {
+  min-width: 0;
+
+  transform: translateY(-12px);
+}
+
+.cake-details-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 10px;
+
+  color: #ff5870;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.cake-details-title {
+  max-width: 590px;
+
+  margin: 0;
+
+  color: #42190d;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(2.5rem, 3.4vw, 4rem);
+  font-weight: 700;
+
+  line-height: 1.05;
+
+  letter-spacing: -1.2px;
+}
+
+/* ==================================================
+   RATING STARTED
+================================================== */
+
+.cake-details-rating-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-top: 15px;
+}
+
+.cake-details-rating {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  color: #76574e;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+}
+
+.cake-details-rating > span {
+  color: #f3a31e;
+
+  font-size: 14px;
+}
+
+.cake-details-rating strong {
+  color: #4d281d;
+
+  font-size: 11px;
+}
+
+.cake-details-rating small {
+  color: #a1847b;
+
+  font-size: 9px;
+}
+
+.cake-details-divider {
+  width: 1px;
+  height: 15px;
+
+  background: #dfcbc5;
+}
+
+.cake-details-fresh {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  color: #578838;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.cake-details-fresh > span {
+  font-size: 7px;
+}
+
+/* ==================================================
+   PRICE STARTED
+================================================== */
+
+.cake-details-price-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 18px;
+}
+
+.cake-details-price {
+  color: #42190d;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.cake-details-price-row > span {
+  color: #9a7d74;
+
+  font-size: 8px;
+}
+
+/* ==================================================
+   DESCRIPTION STARTED
+================================================== */
+
+.cake-details-description {
+  max-width: 610px;
+
+  margin: 14px 0 0;
+
+  color: #76584f;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+
+  line-height: 1.85;
+}
+
+/* ==================================================
+   OPTIONS STARTED
+================================================== */
+
+.cake-option-group {
+  margin-top: 22px;
+}
+
+.cake-option-heading {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 10px;
+}
+
+.cake-option-heading strong {
+  color: #4c281e;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.cake-option-heading span {
+  color: #a1857c;
+
+  font-size: 8px;
+}
+
+/* ==================================================
+   WEIGHT OPTIONS STARTED
+================================================== */
+
+.cake-weight-options {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 8px;
+}
+
+.cake-weight-btn {
+  position: relative;
+
+  min-height: 52px;
+
+  padding: 7px 10px;
+
+  border: 1px solid #ead9d3;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #52352c;
+
+  font-family: "Poppins", sans-serif;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.cake-weight-btn strong,
+.cake-weight-btn small {
+  display: block;
+}
+
+.cake-weight-btn strong {
+  margin-bottom: 2px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.cake-weight-btn small {
+  color: #987b72;
+
+  font-size: 8px;
+}
+
+.cake-weight-btn:hover {
+  border-color: #ff9cac;
+
+  background: #fff8f9;
+}
+
+.cake-weight-btn.active {
+  border-color: #ff5870;
+
+  background: #fff3f5;
+
+  box-shadow: 0 5px 14px rgba(255, 88, 112, 0.09);
+
+  transform: translateY(-1px);
+}
+
+.cake-weight-btn.active::after {
+  content: "✓";
+
+  position: absolute;
+
+  top: 6px;
+  right: 7px;
+
+  display: grid;
+
+  width: 15px;
+  height: 15px;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #ff5870;
+
+  color: #ffffff;
+
+  font-size: 7px;
+}
+
+/* ==================================================
+   PREFERENCE OPTIONS STARTED
+================================================== */
+
+.cake-preference-options {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 8px;
+}
+
+.cake-choice {
+  display: flex;
+
+  min-height: 50px;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 7px 11px;
+
+  border: 1px solid #ead9d3;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.cake-choice:has(input:checked) {
+  border-color: #ff5870;
+
+  background: #fff4f6;
+}
+
+.cake-choice input {
+  accent-color: #ff5870;
+}
+
+.cake-choice strong,
+.cake-choice small {
+  display: block;
+}
+
+.cake-choice strong {
+  margin-bottom: 2px;
+
+  color: #4e2c22;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 9px;
+}
+
+.cake-choice small {
+  color: #9b8178;
+
+  font-size: 7px;
+}
+
+/* ==================================================
+   QUANTITY STARTED
+================================================== */
+
+.cake-purchase-row {
+  display: flex;
+
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-top: 22px;
+}
+
+.cake-quantity-wrap > span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #5c4037;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.cake-quantity {
+  display: inline-grid;
+
+  grid-template-columns: 34px 38px 34px;
+
+  height: 38px;
+
+  overflow: hidden;
+
+  border: 1px solid #e7d5cf;
+  border-radius: 9px;
+
+  background: #ffffff;
+}
+
+.cake-quantity button {
+  border: 0;
+
+  background: transparent;
+
+  color: #5d3b32;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.cake-quantity button:hover {
+  background: #fff2f4;
+
+  color: #ff5870;
+}
+
+.cake-quantity strong {
+  display: grid;
+
+  place-items: center;
+
+  border-left: 1px solid #eee0dc;
+  border-right: 1px solid #eee0dc;
+
+  color: #4d2a20;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 10px;
+}
+
+.cake-stock-status {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+}
+
+.cake-stock-status > span {
+  display: grid;
+
+  width: 29px;
+  height: 29px;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #edf7e8;
+
+  color: #5e923d;
+
+  font-size: 11px;
+}
+
+.cake-stock-status strong,
+.cake-stock-status small {
+  display: block;
+}
+
+.cake-stock-status strong {
+  color: #517b37;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 8px;
+}
+
+.cake-stock-status small {
+  color: #967b72;
+
+  font-size: 7px;
+}
+
+/* ==================================================
+   ACTION BUTTONS STARTED
+================================================== */
+
+.cake-details-actions {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 9px;
+
+  margin-top: 20px;
+}
+
+.cake-details-cart-btn,
+.cake-details-buy-btn {
+  display: inline-flex;
+
+  min-height: 48px;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  border-radius: 9px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.cake-details-cart-btn {
+  border: 1px solid #ff5870;
+
+  background: #ffffff;
+
+  color: #ff5870;
+}
+
+.cake-details-cart-btn svg {
+  width: 16px;
+  height: 16px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.7;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cake-details-cart-btn:hover {
+  background: #fff3f5;
+
+  transform: translateY(-2px);
+}
+
+.cake-details-buy-btn {
+  border: 1px solid #ff5870;
+
+  background: linear-gradient(135deg, #ff667d, #ef4965);
+
+  color: #ffffff;
+
+  box-shadow: 0 8px 18px rgba(255, 88, 112, 0.2);
+}
+
+.cake-details-buy-btn:hover {
+  border-color: #e8435e;
+
+  background: #e8435e;
+
+  transform: translateY(-2px);
+}
+
+/* ==================================================
+   PRODUCT BENEFITS STARTED
+================================================== */
+
+.cake-details-benefits {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 7px;
+
+  margin-top: 18px;
+
+  padding-top: 16px;
+
+  border-top: 1px solid #eadbd6;
+}
+
+.cake-details-benefit {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+.cake-details-benefit > span {
+  display: grid;
+
+  width: 31px;
+  height: 31px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #fff1f3;
+
+  color: #ff5870;
+
+  font-size: 10px;
+}
+
+.cake-details-benefit strong,
+.cake-details-benefit small {
+  display: block;
+}
+
+.cake-details-benefit strong {
+  color: #54372e;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.cake-details-benefit small {
+  margin-top: 2px;
+
+  color: #94786f;
+
+  font-size: 7px;
+}
+
+/* ==================================================
+   PRODUCT DETAILS SECTION ENDED
+================================================== */
+
+/* ==================================================
+   PRODUCT INFORMATION STRIP STARTED
+================================================== */
+
+.cake-information-section {
+  padding: 22px 0 42px;
+
+  background: #ffffff;
+}
+
+.cake-information-container {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  border: 1px solid #eedfd9;
+  border-radius: 16px;
+
+  background: #fffaf8;
+
+  box-shadow: 0 8px 24px rgba(66, 25, 13, 0.035);
+}
+
+.cake-information-container article {
+  display: flex;
+
+  gap: 11px;
+
+  min-height: 110px;
+
+  align-items: flex-start;
+
+  padding: 22px 18px;
+}
+
+.cake-information-container article:not(:last-child) {
+  border-right: 1px solid #eadbd6;
+}
+
+.cake-information-container article > span {
+  color: #ff91a2;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cake-information-container strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #4c281e;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.cake-information-container p {
+  margin: 0;
+
+  color: #8c7067;
+
+  font-size: 8px;
+
+  line-height: 1.65;
+}
+
+/* ==================================================
+   PRODUCT INFORMATION STRIP ENDED
+================================================== */
+
+/* ==================================================
+   TOAST MESSAGE STARTED
+================================================== */
+
+.cake-toast {
+  position: fixed;
+
+  right: 26px;
+  bottom: 26px;
+
+  z-index: 1000;
+
+  display: flex;
+
+  min-width: 250px;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 13px 16px;
+
+  border: 1px solid #e8d8d2;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  box-shadow: 0 15px 40px rgba(66, 25, 13, 0.14);
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  transform: translateY(20px);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.cake-toast.show {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.cake-toast > span {
+  display: grid;
+
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: #edf7e8;
+
+  color: #5d963e;
+
+  font-size: 12px;
+}
+
+.cake-toast strong,
+.cake-toast small {
+  display: block;
+}
+
+.cake-toast strong {
+  margin-bottom: 2px;
+
+  color: #46251b;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 9px;
+}
+
+.cake-toast small {
+  color: #92776e;
+
+  font-size: 8px;
+}
+
+/* ==================================================
+   TOAST MESSAGE ENDED
+================================================== */
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1100px) {
+  .cake-details-layout {
+    gap: 38px;
+  }
+
+  .cake-details-main-image,
+  .cake-details-main-image img {
+    height: 450px;
+    min-height: 450px;
+  }
+
+  .cake-details-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .cake-information-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cake-information-container article:nth-child(2) {
+    border-right: 0;
+  }
+
+  .cake-information-container article:nth-child(-n + 2) {
+    border-bottom: 1px solid #eadbd6;
+  }
+}
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 767px) {
+  .cake-details-section {
+    padding-top: 22px;
+  }
+
+  .cake-details-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cake-details-main-image,
+  .cake-details-main-image img {
+    height: 400px;
+    min-height: 400px;
+  }
+
+  .cake-details-title {
+    font-size: clamp(2.2rem, 10vw, 3.2rem);
+  }
+
+  .cake-details-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .cake-purchase-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .cake-information-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cake-information-container article {
+    border-right: 0 !important;
+    border-bottom: 1px solid #eadbd6;
+  }
+
+  .cake-information-container article:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 479px) {
+  .cake-details-main-image,
+  .cake-details-main-image img {
+    height: 330px;
+    min-height: 330px;
+  }
+
+  .cake-weight-options {
+    grid-template-columns: 1fr;
+  }
+
+  .cake-preference-options {
+    grid-template-columns: 1fr;
+  }
+
+  .cake-details-rating-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 7px;
+  }
+
+  .cake-details-divider {
+    display: none;
+  }
+
+  .cake-toast {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+
+    min-width: 0;
+  }
+}
+
+/* ==================================================
+   CAKE DETAILS PAGE ENDED
+================================================== */
