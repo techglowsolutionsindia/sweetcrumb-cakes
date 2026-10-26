@@ -255,12 +255,35 @@
     transform var(--transition-normal);
 }
 
+/* ==================================================
+   DESKTOP DROPDOWN HOVER STARTED
+================================================== */
+
 .navbar-dropdown.is-open .dropdown-menu {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
   transform: translate(-50%, 0);
 }
+
+@media (min-width: 992px) and (hover: hover) {
+  .navbar-dropdown:hover .dropdown-menu,
+  .navbar-dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translate(-50%, 0);
+  }
+
+  .navbar-dropdown:hover .dropdown-trigger svg,
+  .navbar-dropdown:focus-within .dropdown-trigger svg {
+    transform: rotate(180deg);
+  }
+}
+
+/* ==================================================
+   DESKTOP DROPDOWN HOVER ENDED
+================================================== */
 
 .dropdown-menu a {
   display: flex;
