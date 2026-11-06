@@ -548,6 +548,18 @@
   font-size: 0.82em;
 }
 
+@media (max-width: 767px) {
+  .occasions-hero-title .occasions-title-line:first-child {
+    white-space: normal;
+    font-size: 0.82em;
+  }
+
+  .occasions-hero-title {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+}
+
 .occasions-hero-title .occasions-title-accent {
   color: #ff5c78;
 }

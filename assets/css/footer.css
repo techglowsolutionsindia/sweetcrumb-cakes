@@ -84,21 +84,16 @@
   color: #ff8ca0;
 }
 
-.footer-logo-icon svg {
+/* Footer Logo Image Started */
+.footer-logo-icon img {
   display: block;
 
-  width: 24px;
-  height: 24px;
+  width: 100%;
+  height: 100%;
 
-  fill: none;
-
-  stroke: currentColor;
-
-  stroke-width: 1.7;
-
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  object-fit: contain;
 }
+/* Footer Logo Image Ended */
 
 /* ==================================================
    FOOTER LOGO TEXT STARTED
@@ -143,7 +138,7 @@
 
   font-family: var(--font-body, "Poppins", sans-serif);
 
-  font-size: 8px;
+  font-size: 12px;
 
   line-height: 1.75;
 }
@@ -286,7 +281,7 @@
 
   font-family: var(--font-body, "Poppins", sans-serif);
 
-  font-size: 7.5px;
+  font-size: 12px;
   font-weight: 400;
 
   line-height: 1.5;
@@ -394,7 +389,7 @@
 
   font-family: var(--font-body, "Poppins", sans-serif);
 
-  font-size: 6px;
+  font-size: 10px;
   font-weight: 500;
 }
 
@@ -403,7 +398,7 @@
 
   font-family: var(--font-body, "Poppins", sans-serif);
 
-  font-size: 7px;
+  font-size: 12px;
   font-weight: 500;
 
   line-height: 1.45;
@@ -441,9 +436,9 @@ a.footer-contact-item:hover strong {
   display: grid;
 
   grid-template-columns:
-    auto
     minmax(0, 1fr)
-    auto;
+    minmax(0, 1.4fr)
+    minmax(0, 1fr);
 
   align-items: center;
 
@@ -460,7 +455,7 @@ a.footer-contact-item:hover strong {
 
   font-family: var(--font-body, "Poppins", sans-serif);
 
-  font-size: 6.5px;
+  font-size: 11px;
 }
 
 /* ==================================================
@@ -481,7 +476,7 @@ a.footer-contact-item:hover strong {
 
   font-family: var(--font-body, "Poppins", sans-serif);
 
-  font-size: 6.5px;
+  font-size: 11px;
 
   text-decoration: none;
 
@@ -501,7 +496,7 @@ a.footer-contact-item:hover strong {
 
   font-family: var(--font-body, "Poppins", sans-serif);
 
-  font-size: 6.5px;
+  font-size: 11px;
 
   white-space: nowrap;
 }
@@ -602,6 +597,15 @@ a.footer-contact-item:hover strong {
 /* ==================================================
    SMALL MOBILE ENDED
 ================================================== */
+
+/* Active Footer Policy Link Started */
+.footer-bottom-links .footer-policy-active {
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: default;
+}
+/* Active Footer Policy Link Ended */
 
 /* ==================================================
    FOOTER ENDED

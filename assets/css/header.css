@@ -119,15 +119,14 @@
   justify-content: center;
 }
 
-.brand-logo-icon svg {
+/* Brand Logo Image Started */
+.brand-logo-icon img {
+  display: block;
   width: 100%;
   height: 100%;
-  fill: none;
-  stroke: var(--color-primary);
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  object-fit: contain;
 }
+/* Brand Logo Image Ended */
 
 .brand-logo-text {
   display: flex;

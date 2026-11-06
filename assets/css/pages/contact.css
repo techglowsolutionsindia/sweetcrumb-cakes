@@ -569,7 +569,6 @@
 @media (max-width: 1100px) {
   .contact-hero-container {
     grid-template-columns: 1fr 1fr;
-
     gap: 34px;
   }
 
@@ -582,22 +581,19 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .contact-hero {
     min-height: auto;
   }
 
   .contact-hero-container {
-    grid-template-columns: 1fr;
-
+    grid-template-columns: minmax(0, 1fr);
     min-height: auto;
-
     gap: 12px;
   }
 
   .contact-hero-content {
     padding: 45px 0 20px;
-
     text-align: center;
   }
 
@@ -617,10 +613,8 @@
 
   .contact-hero-benefits {
     max-width: 460px;
-
     margin-right: auto;
     margin-left: auto;
-
     text-align: left;
   }
 
@@ -649,9 +643,7 @@
 
   .contact-hero-actions {
     display: grid;
-
     grid-template-columns: 1fr;
-
     width: 100%;
   }
 
@@ -675,7 +667,6 @@
   .contact-hero-floating-card {
     right: 0;
     bottom: 16px;
-
     min-width: 215px;
   }
 }
@@ -1031,6 +1022,9 @@ a.contact-detail-card:hover {
 .contact-enquiry-form {
   display: grid;
 
+  width: 100%;
+  min-width: 0;
+
   gap: 12px;
 
   margin-top: 18px;
@@ -1046,6 +1040,8 @@ a.contact-detail-card:hover {
 
 .contact-form-group {
   display: grid;
+
+  min-width: 0;
 
   gap: 5px;
 }
@@ -1205,7 +1201,7 @@ a.contact-detail-card:hover {
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
   .contact-enquiry-section {
     padding: 48px 0;
   }
@@ -2004,14 +2000,25 @@ a.contact-detail-card:hover {
 ================================================== */
 
 @media (max-width: 1000px) {
-  .contact-faq-section {
+  .contact-enquiry-section {
     min-height: auto;
   }
 
-  .contact-faq-container {
-    grid-template-columns: 1fr;
-
+  .contact-enquiry-container {
+    grid-template-columns: minmax(0, 1fr);
     gap: 28px;
+  }
+
+  .contact-enquiry-container > *,
+  .contact-form-row > *,
+  .contact-form-group {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .contact-form-card {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -2431,6 +2438,174 @@ a.contact-detail-card:hover {
 /* ==================================================
    CONTACT FORM SUCCESS MESSAGE ENDED
 ================================================== */
+
+/* Contact Page Readability Improvements Started */
+.contact-breadcrumb,
+.contact-hero-eyebrow,
+.contact-section-eyebrow,
+.contact-final-eyebrow {
+  font-size: 10px;
+}
+
+.contact-hero-description,
+.contact-section-description,
+.contact-final-description {
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.contact-hero-primary,
+.contact-hero-secondary,
+.contact-final-primary,
+.contact-final-secondary {
+  font-size: 12px;
+}
+
+.contact-hero-benefits strong,
+.contact-hero-floating-card strong,
+.contact-hero-mini-note strong,
+.contact-final-benefits strong {
+  font-size: 12px;
+}
+
+.contact-hero-benefits small,
+.contact-hero-floating-card small,
+.contact-hero-mini-note small,
+.contact-final-benefits small,
+.contact-hero-image-label {
+  font-size: 10px;
+}
+
+.contact-detail-card small,
+.contact-visit-details small,
+.contact-form-heading > span,
+.contact-visit-image-content > span {
+  font-size: 12px;
+}
+
+.contact-detail-card strong,
+.contact-detail-card div > span,
+.contact-support-note strong,
+.contact-support-note p,
+.contact-visit-details strong,
+.contact-visit-details p,
+.contact-plan-visit-copy strong,
+.contact-plan-visit-copy p,
+.contact-visit-floating-card strong,
+.contact-visit-floating-card small {
+  font-size: 12px;
+}
+
+.contact-form-heading p,
+.contact-form-group label,
+.contact-form-bottom p,
+.contact-form-submit,
+.contact-directions-btn,
+.contact-visit-image-content p {
+  font-size: 12px;
+}
+
+.contact-form-group input,
+.contact-form-group select,
+.contact-form-group textarea {
+  font-size: 14px;
+}
+
+.contact-form-group input,
+.contact-form-group select {
+  height: 44px;
+}
+
+.contact-faq-trigger > span:first-child,
+.contact-faq-answer > p {
+  font-size: 13px;
+}
+
+.contact-form-success-message {
+  font-size: 12px;
+}
+
+@media (max-width: 650px) {
+  .contact-faq-trigger > span:first-child {
+    font-size: 13px;
+  }
+}
+/* Contact Page Readability Improvements Ended */
+
+/* Contact Responsive Width Fix Started */
+@media (max-width: 1000px) {
+  .contact-hero,
+  .contact-enquiry-section,
+  .contact-visit-section,
+  .contact-faq-section,
+  .contact-final-cta {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .contact-hero-container,
+  .contact-enquiry-container,
+  .contact-visit-container,
+  .contact-faq-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: min(
+      calc(100% - (var(--container-padding) * 2)),
+      var(--container-width)
+    );
+    max-width: 100%;
+    min-width: 0;
+    margin-inline: auto;
+    box-sizing: border-box;
+  }
+
+  .contact-hero-container > *,
+  .contact-enquiry-container > *,
+  .contact-visit-container > *,
+  .contact-faq-container > *,
+  .contact-form-card,
+  .contact-enquiry-form,
+  .contact-form-row,
+  .contact-form-group {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-form-row,
+  .contact-detail-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-visit-content .contact-section-title span {
+    white-space: normal;
+  }
+
+  .contact-section-title,
+  .contact-hero-title,
+  .contact-final-title {
+    overflow-wrap: anywhere;
+  }
+
+  .contact-form-group input,
+  .contact-form-group select,
+  .contact-form-group textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .contact-form-bottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-form-submit {
+    width: 100%;
+  }
+}
+/* Contact Responsive Width Fix Ended */
 
 /* ==================================================
    CONTACT PAGE ENDED

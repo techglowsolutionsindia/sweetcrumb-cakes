@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">SweetCrumb Cakes cupcake logo</title>
+  <desc id="desc">Elegant pink cupcake with swirled frosting, a heart, and a fluted cake wrapper.</desc>
+  <g fill="none" stroke="#F25272" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M35 64c-9-2-13-9-10-17 2-6 8-10 15-9-2-10 5-19 15-20 6-1 12 2 16 7 5-6 13-8 20-4 7 4 10 11 8 18 9-1 16 6 16 14 0 7-5 12-12 13"/>
+    <path d="M43 40c3-6 9-9 15-8M77 34c5-3 11-2 15 2" stroke-width="3"/>
+    <path d="M29 65h70l-7 43c-.5 3-3 5-6 5H42c-3 0-5.5-2-6-5L29 65Z"/>
+    <path d="M43 75l4 27M64 75v27M85 75l-4 27" stroke-width="3.5"/>
+    <path d="M29 65c15 5 55 5 70 0" stroke-width="3"/>
+  </g>
+  <path d="M65 15c-2-4-8-5-11-1-4 5 2 11 11 17 9-6 15-12 11-17-3-4-9-3-11 1Z" fill="#F25272" transform="translate(0 -7) scale(.92)"/>
+</svg>
